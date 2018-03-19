@@ -12,7 +12,7 @@ In this track you’ll get hands on experience doing:
 
 Outline on the lab
 
-## [1. Getting the know the basics](exercise1)
+## [1. Your Environment](exercise1/README.md)
 * 
 
 ## [2. xxxxxxx](exercise2)
