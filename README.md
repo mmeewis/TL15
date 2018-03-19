@@ -13,18 +13,42 @@ In this track you’ll get hands on experience doing:
 Outline on the lab
 
 ## [1. Your Environment](exercise1/README.md)
+
+## [1. The Form data model](exercise1/README.md)
+* Data model in /etc
+* Create cloudservice for data model
+
+
+## [2. Create Your Adaptive form](exercise2/README.md)
 * 
 
-## [2. xxxxxxx](exercise2)
-* 
-
-## [3. xxxxxxx](exercise3)
+## [3. Add Your form to a page](exercise3/README.md)
 * e
 
-## [4. xxxxxxx](exercise4)
+## [4. The Default draft/submit](exercise4/README.md)
 * 
-## [5. xxxxxxx](exercise5)
+
+## [5. The Custom draft/submit ](exercise5/README.md)
 * 
+
+## [6. Submit to a REST endpoint ](exercise5/README.md)
+* 
+
+## [6. Submit to a REST endpoint ](exercise5/README.md)
+* 
+
+## [6. Autosave](exercise5/README.md)
+* 
+
+## [6. Send link to saved form](exercise5/README.md)
+* 
+
+## [6. Prefill](exercise5/README.md)
+* 
+
+## [6. Submit and email](exercise5/README.md)
+* 
+
 
 ## Troubleshooting
 * 
