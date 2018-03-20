@@ -61,6 +61,8 @@ In addition to above mentioned default approach, an alternative implementation i
 
 https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-draft-submission-storage.html
 
+https://localhost:4502/system/console/configMgr => Forms Common Configuration Service 
+
 ## [6. Submit to a REST endpoint ](exercise5/README.md)
 * 
 
