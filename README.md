@@ -39,6 +39,16 @@ A submit action is triggered when a user clicks the Submit button on an adaptive
 
 https://helpx.adobe.com/experience-manager/6-3/forms/using/custom-draft-submission-data-services.html
 
+AEM Forms allows users to save an adaptive form as a draft. The draft functionality provides users with the option to maintain a work-in-progress form. A user can then complete and submit the form at any time from any device.
+
+By default, AEM Forms stores the user data associated with the draft and submission on the Publish instance in the /content/forms/fp node.
+
+However, AEM Forms portal components provides data services that allow you to customize the implementation of storing user data for drafts and submissions. For example, you can store the data in a data store currently implemented in your organization.
+
+To customize the storage of user data, you need to implement the Draft Data and Submission Data services.
+
+
+
 ## [6. Submit to a REST endpoint ](exercise5/README.md)
 * 
 
