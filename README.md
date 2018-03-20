@@ -47,7 +47,19 @@ However, AEM Forms portal components provides data services that allow you to cu
 
 To customize the storage of user data, you need to implement the Draft Data and Submission Data services.
 
+==========
 
+With AEM Forms, you can store:
+
+Drafts: A work-in-progress form that end users fill and save for later, and submit afterwards.
+Submissions: Submitted forms containing user provided data.
+AEM Forms Portal data and metadata services provide support for drafts and submissions. By default the data is stored in the publish instance, which is then reverse-replicated to configured author instance to be available for percolation to other publish instances.
+
+The concern with the existing out-of-the-box approach is, that it stores all the data on publish instance, including the data which can be Personal Identifiable Information (PII).
+
+In addition to above mentioned default approach, an alternative implementation is also available for directly pushing the form data to processing instead of saving it locally. Customers having concerns about storage of potentially sensitive data on publish instance can choose the alternative implementation in which the data is sent to a processing server. Since processing happens on the author instance, it typically stays in a secure zone.
+
+https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-draft-submission-storage.html
 
 ## [6. Submit to a REST endpoint ](exercise5/README.md)
 * 
