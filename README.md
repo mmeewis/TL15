@@ -29,7 +29,8 @@ Outline on the lab
 * 
 
 ## [5. The Custom draft/submit ](exercise5/README.md)
-* 
+
+A submit action is triggered when a user clicks the Submit button on an adaptive form. You can configure the submit action on adaptive form. Adaptive forms provide a few out of the box submit actions. You can copy and extend the default submit actions to create you own submit action. However, based on your requirements, you can write and register your own submit action to process data in the submitted form. 
 
 ## [6. Submit to a REST endpoint ](exercise5/README.md)
 * 
