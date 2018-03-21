@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "person": {
+            "type": "object",
+            "properties": {
+                "identity": {
+                    "$ref": "#/definitions/identity"
+                },
+                "address": {
+                    "$ref": "#/definitions/address"
+                },
+                "userName": {
+                    "type" : "string"
+                },
+                "language" : {
+                    "type" : "string"
+                   ,"enum" : ["English", "French", "German"]
+                },
+                "dateOfBirth" : {
+                    "type" : "string"
+                }
+                
+            },
+            "required": [
+                "userName",
+                "dateOfBirth",
+                "language"
+            ]
+        },
+        "identity": {
+            "type": "object",
+            "properties": {
+                "firstname": {
+                    "type": "string"
+                },
+                "lastname": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                    ,"enum" : ["Male", "Female"]
+                },
+                "mobile": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "address": {
+            "type": "object",
+            "properties": {
+                "street": {
+                    "type": "string"
+                },
+                "postalcode": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "citizen": {
+            "$ref": "#/definitions/person"
+        }
+    }
+}
