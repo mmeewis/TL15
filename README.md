@@ -16,18 +16,18 @@ Javadoc : https://helpx.adobe.com/aem-forms/6/javadocs/index.html
 
 ## [1. Your Environment](exercise1/README.md)
 
-## [1. The Form data model](exercise1/README.md)
+## [2. The Form data model](exercise1/README.md)
 * Data model in /etc
 * Create cloudservice for data model
 
 
-## [2. Create Your Adaptive form](exercise2/README.md)
+## [3. Create Your Adaptive form](exercise2/README.md)
 * 
 
-## [3. Add Your form to a page](exercise3/README.md)
+## [4. Add Your form to a page](exercise3/README.md)
 * e
 
-## [4. The Default draft/submit](exercise4/README.md)
+## [5. The Default draft/submit](exercise4/README.md)
 
 Adaptive forms require Submit actions to process user-specified data. A Submit action determines the task performed on the data that you submit using an adaptive form. Adobe Experience Manager (AEM) includes OOTB Submit actions that demonstrate custom tasks you can perform using the user-submitted data. For example, you can perform tasks, such as sending email or storing the data.
 
@@ -35,7 +35,7 @@ Adaptive forms require Submit actions to process user-specified data. A Submit a
 
 https://helpx.adobe.com/experience-manager/6-3/forms/using/custom-submit-action-form.html
 
-## [5. The Custom draft/submit ](exercise5/README.md)
+## [6. The Custom draft/submit ](exercise5/README.md)
 
 A submit action is triggered when a user clicks the Submit button on an adaptive form. You can configure the submit action on adaptive form. Adaptive forms provide a few out of the box submit actions. You can copy and extend the default submit actions to create you own submit action. However, based on your requirements, you can write and register your own submit action to process data in the submitted form. 
 
@@ -65,22 +65,22 @@ https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-draft-sub
 
 https://localhost:4502/system/console/configMgr => Forms Portal Draft and Submission Configuration 
 
-## [6. Submit to a REST endpoint ](exercise5/README.md)
+## [7. Submit to a REST endpoint ](exercise5/README.md)
 * 
 
-## [6. Submit to a REST endpoint ](exercise5/README.md)
+## [8. Submit to a REST endpoint ](exercise5/README.md)
 * 
 
-## [6. Autosave](exercise5/README.md)
+## [9. Autosave](exercise5/README.md)
 * 
 
-## [6. Send link to saved form](exercise5/README.md)
+## [10. Send link to saved form](exercise5/README.md)
 * 
 
-## [6. Prefill](exercise5/README.md)
+## [11. Prefill](exercise5/README.md)
 * 
 
-## [6. Submit and email](exercise5/README.md)
+## [12. Submit and email](exercise5/README.md)
 * 
 
 
