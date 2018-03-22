@@ -34,6 +34,17 @@ Save (draft) data using the default "Forms Portal Submit Action".
 
 Save (draft) data using a custom "Forms Portal Submit Action".
 
+## [6. Autosave forms]
+
+Define events that should trigger auto save of forms.
+
+## [6. Submit actions]
+
+Next to the default Forms portal submit action, find out about other out-of-the-box submit actions. 
+
+## [7. Custom submit action]
+
+Create a custom submit action that sends an "Identity" to Adobe Campaign using Adobe.io.
 
 ## [4. Add Your form to a page](exercise3/README.md)
 * e
