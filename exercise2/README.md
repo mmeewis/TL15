@@ -34,25 +34,38 @@ and save it to your "Desktop".
 
 ## Step 3 - Add the form fields
 
+### Define you form layout
+
 * Toggle the side panel
 * Select "Root Panel" from the available Form Objects
 * Click the "Wrench" icon
 * Select "Tabs on Top" panel layout
 * Confirm
 
+### Add the "Identity" panel
 * Select the "Root panel" component on the right and click "..."
 * Add Child panel "Identity"
-* Repeat
+
+### Add the "Address" panel
+
+* Select the "Root panel" component on the right and click "..."
 * Add Child panel "Address"
-* Repeat
+
+### Add the toolbar
+
+* Select the "Root panel" component on the right and click "..."
 * Add Toolbar
-* Select the "Toolbar for Pane: : Root Panel" component
+* Select the "Toolbar for Panel: : Root Panel" component
 * Use the "+" to add a next, previous, save and submit button
+
+### Add data model fields to the "Identity" panel
 
 * Select the top tab "Identity"
 * Click the "Content" icon on the left
 * Select "Data Model Objects"
 * Drag and drop all the "Identity" fields from the model onto the "Identity" component
+
+### Add data model fields to the "Address" panel
 
 * Select the top tab "Address"
 * Drag and drop all the "Address" fields from the model onto the "Address" component
