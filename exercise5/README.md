@@ -23,7 +23,7 @@ We will not start to code the custom data service "FileDraftDataServiceImpl", th
 
 ## Deploy the DraftDataService bundle
 
-* Download the bundle from github and deploy it via http://localhost:4502/system/console, make sure the bundle is started
+* Download the [summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar](resources/summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar) bundle from github and deploy it via http://localhost:4502/system/console, make sure the bundle is started.
 
 ## Configure the "Forms Portal Draft and Submission Configuration"
 
