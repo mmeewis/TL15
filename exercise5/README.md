@@ -18,6 +18,8 @@ For this lab, we wil use a DraftDataService that will store saved forms data on 
 We will not start to code the custom data service "FileDraftDataServiceImpl", the purpose of this exercise is to deploy and configure the custom service.
 
 * Explore the [FileDraftDataServiceImpl.java](resources/FileDraftDataServiceImpl.java) source code.
+* public String saveData(String id, String formName, String formdata)
+* public byte[] getData(String id) throws FormsPortalException
 
 ## Deploy the DraftDataService bundle
 
