@@ -20,7 +20,7 @@ Before we start, we will deploy our website and add a couple pages required for 
 
 ## [2. Create a Form and use a JSON Schema as the form model](exercise2/README.md)
 
-In this exercise you will create a form that we will use throughout the lab.
+Create a form that we will use throughout the lab.
 
 ## [3. Integrate your form into the site](exercise3/README.md)
 
