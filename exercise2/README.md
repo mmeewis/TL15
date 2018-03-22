@@ -19,7 +19,7 @@ and save it to your "Desktop".
 
 ## Step 2 - Create a form and assign the schema
 
-* Navigate to forms (http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) and create a folder Summit2018
+* In AEM, navigate to forms (http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) and create a folder Summit2018
 * Open de Summit2018 folder
 * Create an Adaptive Form
 * Select the "Blank" template
