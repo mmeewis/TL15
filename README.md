@@ -22,7 +22,7 @@ Before we start, we will deploy our website and add a couple pages required for 
 
 Create a form that we will use throughout the lab.
 
-## [3. Integrate your form into the site](exercise3/README.md)
+## [3. Embed adaptive form in AEM sites page](exercise3/README.md)
 
 Make the form experience an integral part of your site.
 
