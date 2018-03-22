@@ -26,9 +26,14 @@ Create a form that we will use throughout the lab. A JSON Schema will be used as
 
 Make the form experience an integral part of your site.
 
-## [4. AEM Forms portal drafts](exercise4/README.md)
+## [4. AEM Forms portal default draft/submit behavior](exercise4/README.md)
 
 Save (draft) data using the default "Forms Portal Submit Action".
+
+## [5. AEM Forms portal custom draft/submit behavior](exercise4/README.md)
+
+Save (draft) data using a custom "Forms Portal Submit Action".
+
 
 ## [4. Add Your form to a page](exercise3/README.md)
 * e
