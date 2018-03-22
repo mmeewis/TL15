@@ -16,10 +16,15 @@ Javadoc : https://helpx.adobe.com/aem-forms/6/javadocs/index.html
 
 ## [1. Your Environment](exercise1/README.md)
 
-## [2. The Form data model](exercise1/README.md)
-* Data model in /etc
-* Create cloudservice for data model
+Before we start, we will deploy our website and add a couple pages required for this lab.
 
+## [2. Create a Form and use a JSON Schema as the form model](exercise2/README.md)
+
+In this exercise you will create a form that we will use throughout the lab.
+
+## [3. Integrate your form into the site](exercise3/README.md)
+
+Make the form experience an integral part of your site.
 
 ## [3. Create Your Adaptive form](exercise2/README.md)
 * 
