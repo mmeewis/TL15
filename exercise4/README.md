@@ -8,7 +8,7 @@ In this excercise we will expplore the default behavior, in [Exercise 5](exercis
 
 ## Fill the form and save a draft
 
-Use the from preparated in [Exercise 2](exercise2/README.md) and fill some fields and "Save" the form (do not subit the form)
+Navigate to the AEM Site's "Form"-page [Exercise 2](exercise2/README.md) and fill some fields and "Save" the form (do not submit the form)
 
 ## Explore the form data
 
@@ -17,7 +17,7 @@ View the jcr:data node of a entry in the data folder (click the view link)
 
 ## Access the form from the forms portal
 
-* Navigate to your "Portal" page created in [exercise 1](exercise1/README.md]
+* Navigate to your "Portal" page created in [exercise 1](exercise1/README.md)
 * Select the "Draft Forms" tab
 * Your form will be listed here
 * Open the form, it will be prefilled with the saved data
