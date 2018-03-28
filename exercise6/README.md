@@ -12,3 +12,10 @@ To improve the form filling experience we will allow the user to indicate if he/
 ## Step 2 : The 
 * [TL15UtilityServlet.java](resources/TL15UtilityServlet.java)
 
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
