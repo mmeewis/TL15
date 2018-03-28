@@ -30,9 +30,13 @@ Make the form experience an integral part of your site.
 
 Save (draft) data using the default "Forms Portal Submit Action".
 
-## [5. AEM Forms portal custom draft/submit behavior](exercise4/README.md)
+## [5. AEM Forms portal custom draft/submit behavior](exercise5/README.md)
 
 Save (draft) data using a custom "Forms Portal Submit Action".
+
+## [6. Send user a link to the saved form](exercise6/README.md)
+
+When the user clicks the "Save" button, we will show a dialog asking if a link to the form should be sent via email (Adobe Campaign)
 
 ## [6. Autosave forms]
 
