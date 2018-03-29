@@ -52,6 +52,7 @@ window.addEventListener("bridgeInitializeStart", function (){
    });
 });
 ```
+* This file is part of the same client library "draft-email-handler-clientlib" created in [exercise6](../exercise6/README.md) and will be loaded when the form loads.
 
 ### Configure the form
 
