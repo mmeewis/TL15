@@ -2,8 +2,6 @@
 
 To improve the form filling experience we will allow the user to indicate if he/she wants to receive an email with a link to the draft form, after receiving the email, the user can continue filling the form on desktop or mobile. We will send the email using Adobe Campaign. To provide this functionality, we have to override the default client side behavior of the "save" button and we have to provide a service (servlet) to send the email. I
 
-we need to change the default behavior of the "save" button. When the save button is pressed, a dialog will be shown to the user, asking if a link to the form should be sent via email. After confirmation, the dialog will invoke a servlet that will handle the email sending. The servlet will only receive the form's "draftId" and will use our custom DraftDataService [exercise](exercise/README.md) and standard DraftMetadataDataService to obtain all the required form data. The servlet extracts the email address from the form data and uses
-
 (6 Steps)
 
 ## Step 1 : Implement the dialog as a client library
