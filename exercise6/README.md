@@ -92,7 +92,7 @@ $(function() {
 * Select the "Edit Rules" (hammer-icon) from the context menu
 * This is how teh dafult rule looks like
 
-![client-side-save-default.png](resources/client-side-save-default.png)
+![client-side-save-default.png](../resources/client-side-save-default.png)
 
 ## Step 2 : Deliver the email
 * [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java)
