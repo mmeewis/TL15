@@ -90,9 +90,26 @@ $(function() {
 
 * In the form, click the "save" button in the toolbar
 * Select the "Edit Rules" (hammer-icon) from the context menu
-* This is how teh dafult rule looks like
+* This is how the dafult rule looks like
 
 ![client-side-save-default.png](../resources/client-side-save-default.png)
+
+* Select the "Save - Click" rule and click "Edit"
+* Click "Visual Editor" on the right select "Code Editor" from the list
+* Click "Edit Code"
+* Acknowledge the dialog ("Edit")
+* Change the default generated code
+
+```javascript
+handleDraftSave(this);
+```
+* Into 
+
+```javascript
+handleDraftSave(this);
+$("#draftModal").modal('show');
+```
+
 
 ## Step 2 : Deliver the email
 * [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java)
