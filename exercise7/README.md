@@ -7,11 +7,13 @@ You can configure an adaptive form to automatically start saving the content bas
 * Start saving content of a form based on a user event
 * Saving the content of a form repeatedly after a specified time interval
 
+**We are still using our custom DraftDataService which saves the form data on your Desktop, open the file and see how it is updated automatically as you fill more fields.**
+
 ## Autosave whenever a field changes
 
 See [How to activate the configuration panel for a form component](../generic/README.md)
 
-### Configure
+### Configure the form
 
 * Open the form you created as part of [exercise2](../exercise2/README.md) in edit mode
 * Select "Adaptive Form Container" and select "Configure) (5)
@@ -27,24 +29,31 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 * Preview the form
 * Fill a field
-* We are still using our custom DraftDataService which saves the form data on your Desktop, open the file and see how it is updated automatically as you fill more fields.
+* Check the most recent .json file on your Desktop
+* Fill a field
+* Check the .json file again and see how it is autosaved for each field
 
 ## Autosave when a specific field is changed (e.g. email)
 
 ### Create a client library
 
+* Add the file /apps/summit-2018/tl15/draft-email-handler-clientlib/js/customAutoSaveTriggerEmail.js
+* Paste the code listed below
+
 ```javascript
 window.addEventListener("bridgeInitializeStart", function (){   
-    guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) { 
-        if(data.target.name === 'Email') {
-            guideBridge.trigger("emailFocusChange");
+    guideBridge.connect(function () { guideBridge.on("elementValueChanged", function (event,data) { 
+        console.log("data.target.name : " + data.target.name);
+        if(data.target.name === 'email') {
+            console.log("trigger => emailValueChanged");
+            guideBridge.trigger("emailValueChanged");
         }
     });
    });
 });
 ```
 
-### Configure
+### Configure the form
 
 In the previous exercise, we auto saved the form after each field value change, in this part of the exercise we would on like to trigger the autosave only when a specific field (for example email) is changed.
 
@@ -52,7 +61,17 @@ In the previous exercise, we auto saved the form after each field value change, 
 * Select "Adaptive Form Container" and select "Configure) (5)
 * Scroll down in the configuration panel
 * Open autosave
-* 
+* Trigger is "Event Based"
+* Set the "Strategy Configuration"
+  - Auto save after this event = **emailValueChanged** (see [GuideBridge Doc](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html) for a list of available GuideBridge events).
 
+### Test
 
+* Preview the form
+* Fill a field (not email)
+* Check the most recent .json file on your desktop
+* Fill another field (not email)
+* Check the .json file again, it has not changed
+* Enter a value for the "email" field and leave the field
+* Check the .json file again, all the modified fields are present
 
