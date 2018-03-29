@@ -4,6 +4,8 @@ To improve the form filling experience we will allow the user to indicate if he/
 
 we need to change the default behavior of the "save" button. When the save button is pressed, a dialog will be shown to the user, asking if a link to the form should be sent via email. After confirmation, the dialog will invoke a servlet that will handle the email sending. The servlet will only receive the form's "draftId" and will use our custom DraftDataService [exercise](exercise/README.md) and standard DraftMetadataDataService to obtain all the required form data. The servlet extracts the email address from the form data and uses
 
+(6 Steps)
+
 ## Step 1 : Implement the dialog as a client library
 
 In exercises [exercise4](../exercise4/README.md) and [exercise5](../exercise5/README.md) we have discussed the default server-side behavior and implemented a custom server-side behavior for saving drafts. In this exercise we will have to change the client-side behavior because we want to show the user a dialog after clicking the save button. This dialog will ask the user if he/she wants to receive an email with a link to the draft form. This of cause, will only work when the user have provided an email in the email field.
