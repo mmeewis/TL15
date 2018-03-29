@@ -114,34 +114,15 @@ $("#draftModal").modal('show');
 
 ## Step 4 : Deliver the email
 
-* [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java)
+* The [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java) is already deployed as part of the bundle [summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar](resources/summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar) deployed as part of [exercise5](../exercise5/README.md).
 
 This servlet will receive the "draftId" from the ajax call in the dialog. The darftId allows us to retrieve the form metadata using the configured DraftMetadataService.getProperty() method. Because we want to send an email we need the actual form data that is saved onto our filesystem using our custom implementation of the DraftDataService [exercise5](../exercise5/README.md). The form data stores the email address. The "userdataID" stored as part of the draft form's metadata will allow to identify the form data using the DraftDataService.getData() method.
 
 The getTransactionalMessagePayload will prepare the payload for the adobe.io call to Adobe Campaign. AdobeIORequestProcessor is a library that provide a java api on top of Adobe Campaign's REST api.
 
 ```java
-package be.adobe.presales.summit.lab.tl15.servlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.ServletException;
-
-import org.apache.felix.scr.annotations.Property;
-import org.apache.felix.scr.annotations.Properties;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.sling.SlingServlet;
-import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.SlingHttpServletResponse;
-import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
-import org.apache.sling.commons.json.JSONObject;
-import org.apache.sling.commons.json.JSONTokener;
-import org.osgi.framework.Constants;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import be.adobe.presales.adobe.io.jwt.utils.core.AdobeIORequestProcessor;
+...
 
 import com.adobe.fd.fp.service.DraftDataService;
 import com.adobe.fd.fp.service.DraftMetadataService;
