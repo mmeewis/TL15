@@ -7,7 +7,7 @@ You can configure an adaptive form to automatically start saving the content bas
 * Start saving content of a form based on a user event
 * Saving the content of a form repeatedly after a specified time interval
 
-**We are still using our custom DraftDataService which saves the form data on your Desktop, open the file and see how it is updated automatically as you fill more fields.**
+**We are still using our custom DraftDataService which saves the form data on your Desktop, open the file and see how it is updated as you fill more fields.**
 
 ## Part 1 : Autosave whenever a field changes
 
