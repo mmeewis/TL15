@@ -9,7 +9,7 @@ You can configure an adaptive form to automatically start saving the content bas
 
 **We are still using our custom DraftDataService which saves the form data on your Desktop, open the file and see how it is updated automatically as you fill more fields.**
 
-## Autosave whenever a field changes
+## Part 1 : Autosave whenever a field changes
 
 See [How to activate the configuration panel for a form component](../generic/README.md)
 
@@ -33,7 +33,7 @@ See [How to activate the configuration panel for a form component](../generic/RE
 * Fill a field
 * Check the .json file again and see how it is autosaved for each field
 
-## Autosave when a specific field is changed (e.g. email)
+## Part 2 : Autosave when a specific field is changed (e.g. email)
 
 ### Create a client library
 
