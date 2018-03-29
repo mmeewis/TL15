@@ -33,11 +33,13 @@ Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) file
 
 ## Step 3 - Add the form fields
 
+See [How to activate the configuration panel for a form component](../generic/README.md)
+
 ### Define you form layout
 
 * Toggle the side panel
 * Select "Root Panel" from the available Form Objects
-* Click the "Wrench" icon
+* Click "Configure"
 * Select "Tabs on Top" panel layout
 * Confirm
 
