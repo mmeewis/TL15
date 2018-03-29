@@ -6,6 +6,8 @@ we need to change the default behavior of the "save" button. When the save butto
 
 ## Step 1 : Override client side "save"
 
+
+
 * Import [draft-email-handler-clientlib](resources/draft-email-handler-clientlib.zip) via [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Explore /apps/summit-2018/tl15/draft-email-handler-clientlib/js/draftEmailHandler.js
 * We recover the draftId using the guidebrigde-object : guideBridge.customContextProperty('draftID')
