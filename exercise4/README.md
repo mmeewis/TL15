@@ -17,7 +17,7 @@ View the jcr:data node of a entry in the data folder (click the view link)
 
 ## Access the form from the forms portal
 
-* Navigate to your "Portal" page created in [exercise 1](exercise1/README.md)
+* Navigate to your "Portal" page created in [exercise 1](../exercise1/README.md)
 * Select the "Draft Forms" tab
 * Your form will be listed here
 * Open the form, it will be prefilled with the saved data
