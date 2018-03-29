@@ -84,10 +84,13 @@ $(function() {
 * Select the "Form Cantainer" from the "Form Object" in the side pabel
 * Click "Configure"
 * Specify "draft-email-handler-clientlib" as the value for "Client Library Category"
+* Click "Done" (upper right in the side panel, color is blue in case of non-saved changes)
 
 ## Step 3 : Change the "save"-buttons client-side behavior
 
-
+* In the form, click the "save" button in the toolbar
+* Select the "Edit Rules" (hammer-icon) from the context menu
+*
 
 ## Step 2 : Deliver the email
 * [TL15UtilityServlet.java](resources/TL15UtilityServlet.java)
