@@ -4,7 +4,7 @@ To improve the form filling experience we will allow the user to indicate if he/
 
 we need to change the default behavior of the "save" button. When the save button is pressed, a dialog will be shown to the user, asking if a link to the form should be sent via email. After confirmation, the dialog will invoke a servlet that will handle the email sending. The servlet will only receive the form's "draftId" and will use our custom DraftDataService [exercise](exercise/README.md) and standard DraftMetadataDataService to obtain all the required form data. The servlet extracts the email address from the form data and uses
 
-## Step 1 : Override client-side "save"
+## Step 1 : Implement the dialog as a client library
 
 In exercises [exercise4](exercise4/README.md) and [exercise5](exercise5/README.md) we have discussed the default server-side behavior and implemented a custom server-side behavior for saving drafts. In this exercise we will have to change the client-side behavior because we want to show the user a dialog after clicking the save button. This dialog will ask the user if he/she wants to receive an email with a link to the draft form. This of cause, will only work when the user have provided an email in the email field.
 
@@ -75,6 +75,19 @@ $(function() {
 
 * We recover the draftId using the guidebrigde-object : guideBridge.customContextProperty('draftID')
 * And pass it as a parameter to a url that maps to a custom servlet
+* Set the clientlib's [/apps/summit-2018/tl15/draft-email-handler-clientlib](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/draft-email-handler-clientlib) category to "draft-email-handler-clientlib"
+
+## Step 2 : Use the client library in the form
+
+* Open your [form](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) in edit mode
+* Toggle the side panel if needed
+* Select the "Form Cantainer" from the "Form Object" in the side pabel
+* Click "Configure"
+* Specify "draft-email-handler-clientlib" as the value for "Client Library Category"
+
+## Step 3 : Change the "save"-buttons client-side behavior
+
+
 
 ## Step 2 : Deliver the email
 * [TL15UtilityServlet.java](resources/TL15UtilityServlet.java)
