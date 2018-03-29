@@ -1,6 +1,6 @@
 # AEM Forms portal custom draft/submit behavior
 
-As mentioned in [exercise 4](exercise4/README.md), the default forms portal draft/submit is to store data in the CRX repository. However, as users interact with forms through AEM publish instance, which is generally outside the enterprise firewall, organizations may want to customize data storage for it to be more secure and reliable.
+As mentioned in [exercise 4](../exercise4/README.md), the default forms portal draft/submit is to store data in the CRX repository. However, as users interact with forms through AEM publish instance, which is generally outside the enterprise firewall, organizations may want to customize data storage for it to be more secure and reliable.
 
 AEM forms portal components provides data services that allow you to customize the implementation of storing user data for drafts and submissions. For example, you can store the data in a data store currently implemented in your organization.
 
@@ -17,9 +17,114 @@ For this lab, we wil use a DraftDataService that will store saved forms data on 
 
 We will not start to code the custom data service "FileDraftDataServiceImpl", the purpose of this exercise is to deploy and configure the custom service.
 
-* Explore the [FileDraftDataServiceImpl.java](resources/FileDraftDataServiceImpl.java) source code.
+* Explore the [FileDraftDataServiceImpl.java](../resources/FileDraftDataServiceImpl.java) source code.
 * public String saveData(String id, String formName, String formdata)
 * public byte[] getData(String id) throws FormsPortalException
+
+```java
+@Component(immediate = true)
+@Service(value = DraftDataService.class)
+@Property(name = "aem.formsportal.impl.prop", value = "summit.tl15formsportal.file.draft.dataservice")
+public class FileDraftDataServiceImpl implements DraftDataService {
+
+	private final static Logger logger = LoggerFactory.getLogger(FileDraftDataServiceImpl.class);
+	
+	private final static String DESKTOP = "Desktop";
+	
+	private String getId() {
+        return String.valueOf(System.nanoTime());
+    }
+	
+	private String getFilename(String id) {
+		return System.getProperty("user.home") + File.separator + DESKTOP + File.separator + id + ".json";
+	}
+	
+	public byte[] getData(String id) throws FormsPortalException {
+		
+		byte[] data;
+		
+		String fileName = getFilename(id);
+		
+		logger.info("Getting data for file : " + fileName);
+		
+		try {
+			
+			File draftFile = new File(fileName);
+			
+			data = Files.readAllBytes(draftFile.toPath());
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new FormsException(e);
+		}
+		
+		return data;
+		
+	}
+
+
+	public String saveData(String id, String formName, String formdata)
+			throws FormsPortalException {
+		
+		logger.info("id => " + id);
+		logger.info("formName => " + formName);
+		logger.info("formData => " + formdata);
+		
+		try {
+			
+			if ((id == null) || (id.isEmpty())) {	
+				id = getId();
+			}
+			
+			String fileName = getFilename(id);
+			
+			logger.info("Writing file in " + fileName);
+			
+			File draftFile = new File(fileName);
+			FileWriter fw = new FileWriter(draftFile);
+			
+			fw.write(formdata);
+			
+			fw.close();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new FormsException(e);
+		}
+		
+		logger.info("Finished");
+		
+		
+		return id;
+	}
+	
+	
+	
+	public boolean deleteAttachment(String id) throws FormsPortalException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteData(String id) throws FormsPortalException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public byte[] getAttachment(String id) throws FormsPortalException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String saveAttachment(byte[] attachmentBytes) throws FormsPortalException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}
+```
 
 ## Deploy the DraftDataService bundle
 
