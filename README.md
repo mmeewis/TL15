@@ -16,7 +16,7 @@ Javadoc : https://helpx.adobe.com/aem-forms/6/javadocs/index.html
 
 ## [1. Setup your Environment](exercise1/README.md)
 
-Before we start, we will deploy our website and add a couple pages required for this lab.
+Before we start, we will deploy our website and add a couple of pages required for this lab.
 
 ## [2. Create a (JSON Schema based) Form](exercise2/README.md)
 
