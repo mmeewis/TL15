@@ -20,8 +20,8 @@ See [How to activate the configuration panel for a form component](../generic/RE
 * Set "Adaptive Form Event" equal 1
 * Trigger is "Event Based"
 * Set the "Strategy Configuration"
-** Auto save after this event = elementValueChanged (see [GuideBridge Doc](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html) for a list of available GuideBridge events.
-** Enable auto save for anonymous user = yes
+  - Auto save after this event = elementValueChanged (see [GuideBridge Doc](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html) for a list of available GuideBridge events.
+  - Enable auto save for anonymous user = yes
 
 ### Test
 
