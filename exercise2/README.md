@@ -13,8 +13,7 @@ https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-sc
 
 ## Step 1 - Download your JSON Schema
 
-Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) file from github https://raw.githubusercontent.com/mmeewis/TL15/master/identity.schema.json
-and save it to your "Desktop".
+Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) file from github and save it to your "Desktop".
 
 
 ## Step 2 - Create a form and assign the schema
