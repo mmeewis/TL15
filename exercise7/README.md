@@ -9,8 +9,25 @@ You can configure an adaptive form to automatically start saving the content bas
 
 ## Autosave whenever a field changes
 
+See [How to activate the configuration panel for a form component](../generic/README.md)
+
+### Configure
+
 * Open the form you created as part of [exercise2](../exercise2/README.md) in edit mode
-* Select "Form 
+* Select "Adaptive Form Container" and select "Configure) (5)
+* Scroll down in the configuration panel
+* Open and "enable" autosave
+* Set "Adaptive Form Event" equal 1
+* Trigger is "Event Based"
+* Set the "Strategy Configuration"
+** Auto save after this event = elementValueChanged (see [GuideBridge Doc](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html) for a list of available GuideBridge events.
+** Enable auto save for anonymous user = yes
+
+### Test
+
+* Preview the form
+* Fill a field
+* We are still using our custom DraftDataService which saves the form data on your Desktop, open the file and see how it is updated automatically as you fill more fields.
 
 ## Autosave when a specific field is changed (e.g. email)
 
