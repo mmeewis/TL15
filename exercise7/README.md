@@ -31,6 +31,19 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 ## Autosave when a specific field is changed (e.g. email)
 
+### Create a client library
+
+```javascript
+window.addEventListener("bridgeInitializeStart", function (){   
+    guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) { 
+        if(data.target.name === 'Email') {
+            guideBridge.trigger("emailFocusChange");
+        }
+    });
+   });
+});
+```
+
 ### Configure
 
 In the previous exercise, we auto saved the form after each field value change, in this part of the exercise we would on like to trigger the autosave only when a specific field (for example email) is changed.
