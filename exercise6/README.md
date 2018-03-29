@@ -109,10 +109,16 @@ handleDraftSave(this);
 handleDraftSave(this);
 $("#draftModal").modal('show');
 ```
+* Click "Done"
+* Click "Close"
 
+## Step 4 : Deliver the email
 
-## Step 2 : Deliver the email
 * [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java)
+
+This servlet will receive the "draftId" from the ajax call in the dialog. The darftId allows us to retrieve the form metadata using the configured DraftMetadataService.getProperty() method. Because we want to send an email we need the actual form data that is saved onto our filesystem using our custom implementation of the DraftDataService [exercise5](../exercise5/README.md). The form data stores the email address. The "userdataID" stored as part of the draft form's metadata will allow to identify the form data using the DraftDataService.getData() method.
+
+The getTransactionalMessagePayload will prepare the payload for the adobe.io call to Adobe Campaign. AdobeIORequestProcessor is a library that provide a java api on top of Adobe Campaign's REST api.
 
 ```java
 package be.adobe.presales.summit.lab.tl15.servlet;
@@ -249,3 +255,18 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 }
 
 ```
+
+## Step 5 : Test
+
+* Preview your form
+* Provide a couple of values
+* Specify a valid "email" address (preferably your own)
+* Save the form
+* The dialog asking to send link should appear
+* Click "Send Email"
+
+## Step 6 : Check Your email
+
+* If the mail does not appear in your inbox, check your spam
+* Click the "Account Opening"-link
+* Your draft form should display
