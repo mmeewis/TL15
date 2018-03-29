@@ -1,15 +1,17 @@
 # Send user a link to the saved form
 
-To improve the form filling experience we will allow the user to indicate if he/she wants to receive an email with a link to the draft form. We will send the email using Adobe Campaign. To provide this functionality, we need to change the default behavior of the "save" button. The changed
+To improve the form filling experience we will allow the user to indicate if he/she wants to receive an email with a link to the draft form. We will send the email using Adobe Campaign. To provide this functionality, we have to override the default client side behavior of the "save" button and we have to provide a service (servlet) to be the email.
 
-## Step 1 : Cha
+we need to change the default behavior of the "save" button. When the save button is pressed, a dialog will be shown to the user, asking if a link to the form should be sent via email. After confirmation, the dialog will invoke a servlet that will handle the email sending. The servlet will only receive the form's "draftId" and will use our custom DraftDataService [exercise](exercise/README.md) and standard DraftMetadataDataService to obtain all the required form data. The servlet extracts the email address from the form data and uses
+
+## Step 1 : Override client side "save"
 
 * Import [draft-email-handler-clientlib](resources/draft-email-handler-clientlib.zip) via [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Explore /apps/summit-2018/tl15/draft-email-handler-clientlib/js/draftEmailHandler.js
 * We recover the draftId using the guidebrigde-object : guideBridge.customContextProperty('draftID')
 * And pass it as a parameter to a url that maps to a custom servlet
 
-## Step 2 : The 
+## Step 2 : Deliver the email
 * [TL15UtilityServlet.java](resources/TL15UtilityServlet.java)
 
 ```java
