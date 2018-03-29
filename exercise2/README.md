@@ -22,12 +22,12 @@ Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) file
 * Open de Summit2018 folder
 * Create an Adaptive Form
 * Select the "Blank" template
-* Name the form "Form Exercise 2"
+* Name the form "TL15"
 * Select "Form model"
 * Select From : Schema
 * Upload from disk 
 * Click "Upload Schema Definition"
-* Select the downloaded in Step 1
+* Select "summit-tl15.schema.json" downloaded in "Step 1"
 * You should see "Valid Schema Selected"
 * Create and Open form
 
