@@ -18,7 +18,7 @@ Javadoc : https://helpx.adobe.com/aem-forms/6/javadocs/index.html
 
 Before we start, we will deploy our website and add a couple pages required for this lab.
 
-## [2. Create an adaptive form](exercise2/README.md)
+## [2. Create a (JSON Schema based) Form](exercise2/README.md)
 
 Create a form that we will use throughout the lab. A JSON Schema will be used as the form data model.
 
