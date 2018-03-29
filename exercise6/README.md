@@ -6,9 +6,9 @@ we need to change the default behavior of the "save" button. When the save butto
 
 ## Step 1 : Implement the dialog as a client library
 
-In exercises [exercise4](exercise4/README.md) and [exercise5](exercise5/README.md) we have discussed the default server-side behavior and implemented a custom server-side behavior for saving drafts. In this exercise we will have to change the client-side behavior because we want to show the user a dialog after clicking the save button. This dialog will ask the user if he/she wants to receive an email with a link to the draft form. This of cause, will only work when the user have provided an email in the email field.
+In exercises [exercise4](../exercise4/README.md) and [exercise5](../exercise5/README.md) we have discussed the default server-side behavior and implemented a custom server-side behavior for saving drafts. In this exercise we will have to change the client-side behavior because we want to show the user a dialog after clicking the save button. This dialog will ask the user if he/she wants to receive an email with a link to the draft form. This of cause, will only work when the user have provided an email in the email field.
 
-* Import [draft-email-handler-clientlib](resources/draft-email-handler-clientlib.zip) via [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Import [draft-email-handler-clientlib](../resources/draft-email-handler-clientlib.zip) via [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Explore [/apps/summit-2018/tl15/draft-email-handler-clientlib/js/draftEmailHandler.js](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/draft-email-handler-clientlib/js/draftEmailHandler.js)
 
 ```javascript
@@ -95,7 +95,7 @@ $(function() {
 ![client-side-save-default.png](resources/client-side-save-default.png)
 
 ## Step 2 : Deliver the email
-* [TL15UtilityServlet.java](resources/TL15UtilityServlet.java)
+* [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java)
 
 ```java
 package be.adobe.presales.summit.lab.tl15.servlet;
