@@ -162,7 +162,7 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 									
 			// Use the configured draftMetadataService (default = crx)
 			
-			**String userdataID = draftMetadataService.getProperty(draftId,"userdataID")[0];**
+			String userdataID = draftMetadataService.getProperty(draftId,"userdataID")[0];
 			
 			logger.info("userdataID : " + userdataID );
 			
