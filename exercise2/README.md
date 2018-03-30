@@ -15,7 +15,7 @@ https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-sc
 
 Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) file from github and save it to your "Desktop".
 
-```json
+```javascript
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "definitions": {
