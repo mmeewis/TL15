@@ -248,6 +248,8 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 
 ## Step 6 : Check Your email
 
-* If the mail does not appear in your inbox, check your spam
+The Adobe Campaign instance we use in this demo, sends all emails to a sandbox environment. You can access this environment via this [web based email client](https://marcmeewis-230217.campaign-demo.adobe.com/webmail/?_task=mail&_mbox=INBOX). Login with user "demo", the password will be communicated during the TL15 lab. The email client will show all mails send during this lab. Make sure that you open your own email. Your mail will have a subject beginning with your "machine label" CSxx-xxx that you entered as part of the form data.
+
+* Indentify your email
 * Click the "Account Opening"-link
-* Your draft form should display
+* Your draft form should display the previously entered data.
