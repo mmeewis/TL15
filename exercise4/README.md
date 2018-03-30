@@ -8,10 +8,6 @@ In this excercise we will explore the default behavior, in [Exercise 5](../exerc
 
 The data is saved in JSON format and sructured according to the associated JSON Schema [summit-tl15.schema.json](../resources/summit-tl15.schema.json).
 
-## The form submission process
-
-![aem-forms-submit.png](../resources/aem-forms-submit.png)
-
 ## Fill the form and save a draft
 
 Navigate to the AEM Site's "Form"-page [Exercise 2](../exercise2/README.md) and fill some fields and "Save" the form (do not submit the form)
