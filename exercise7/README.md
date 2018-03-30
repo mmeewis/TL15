@@ -74,5 +74,5 @@ In the previous exercise, we auto saved the form after each field value change, 
 * Fill another field (not email)
 * Check the .json file again, it has not changed
 * Enter a value for the "email" field and leave the field
-* Check the .json file again, all the modified fields are present
+* Check the .json file again, all the entered form fields should be present
 
