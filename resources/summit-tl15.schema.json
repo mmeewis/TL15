@@ -16,6 +16,10 @@
         "identity": {
             "type": "object",
             "properties": {
+                "labmachinelabel": {
+                    "type": "string"
+                   ,"pattern" : "^(CS)[0-9]{3}-[0-9]{2}$"    
+                },
                 "firstname": {
                     "type": "string"
                 },
