@@ -103,7 +103,13 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 		
 		JSONObject formDataJson = new JSONObject(jT);
 		
-		String email = formDataJson.getJSONObject("afData").getJSONObject("afBoundData").getJSONObject("data").getJSONObject("profile").getJSONObject("identity").getString("email");
+		JSONObject identityJson = formDataJson.getJSONObject("afData").getJSONObject("afBoundData").getJSONObject("data").getJSONObject("profile").getJSONObject("identity");
+		
+		String email = identityJson.getString("email");
+		String labmachinelabel = identityJson.getString("labmachinelabel");
+		
+		logger.info("email : " + email);
+		logger.info("labmachinelabel : " + labmachinelabel);
 		
 		JSONObject confirmationEmailJson = new JSONObject();
 		confirmationEmailJson.put("mcEvent", "EVTSendFormsDraftLink"); // EVTttsTicketConfirmation
@@ -118,6 +124,7 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 		// emailCtx.put("cryptedId", profileResponseJSON.getString("cryptedId"));			
 		emailCtx.put("email", email);			
 		emailCtx.put("draftId", draftId);
+		emailCtx.put("labmachinelabel", labmachinelabel);
 		
 		mcPayloadEmailJson.put("ctx", emailCtx);
 		
