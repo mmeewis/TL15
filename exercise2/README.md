@@ -127,6 +127,10 @@ See [How to activate the configuration panel for a form component](../generic/RE
 * Select "Data Model Objects"
 * Drag and drop all the "Identity" fields from the model onto the "Identity" component
 
+Your form should look like:
+
+![form-exercise2.png](../resources/form-exercise2.png)
+
 ### Add data model fields to the "Address" panel
 
 * Select the top tab "Address"
