@@ -197,8 +197,7 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 		System.out.println("sendSavedFormLink - done");
 		
 	}
-	
-		
+			
 	private JSONObject getTransactionalMessagePayload(String draftId, byte data[]) throws Exception {
 	
 		String formDataString = new String(data);
@@ -225,7 +224,6 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 		
 		JSONObject emailCtx = new JSONObject();
 		
-		// emailCtx.put("cryptedId", profileResponseJSON.getString("cryptedId"));			
 		emailCtx.put("email", email);			
 		emailCtx.put("draftId", draftId);
 		emailCtx.put("labmachinelabel", labmachinelabel);
@@ -234,12 +232,8 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 		
 		logger.info("confirmationEmailJson >> " + confirmationEmailJson.toString());
 		
-		return confirmationEmailJson;
-		
+		return confirmationEmailJson;		
 	}
-	
-	
-	
 }
 ```
 
