@@ -54,6 +54,7 @@ Create a custom submit action that sends an "Identity" to Adobe Campaign using A
 
 Create a custom submit action that sends an "Identity" to Adobe Campaign using Adobe.io.
 
+* The end
 
 ## [4. Add Your form to a page](exercise3/README.md)
 * e
@@ -62,7 +63,6 @@ Create a custom submit action that sends an "Identity" to Adobe Campaign using A
 
 Adaptive forms require Submit actions to process user-specified data. A Submit action determines the task performed on the data that you submit using an adaptive form. Adobe Experience Manager (AEM) includes OOTB Submit actions that demonstrate custom tasks you can perform using the user-submitted data. For example, you can perform tasks, such as sending email or storing the data.
 
-![Screenshot](aem-forms-submit.png)
 
 https://helpx.adobe.com/experience-manager/6-3/forms/using/custom-submit-action-form.html
 
