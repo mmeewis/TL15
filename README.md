@@ -4,7 +4,7 @@ Adobe Experience Manager (AEM) provides an easy-to-use solution to create, manag
  
 In this session we will focus on the data-related aspects of AEM Forms. You will learn about saving/auto-saving forms and trigger an email with a link to the saved form using Adobe Campaign. We will discuss form prefilling and the submission of forms towards an external system. This session requires some familiarity with component development in Adobe Experience Manager.
  
-In this track you’ll get hands on experience doing:
+In this lab you’ll get hands on experience doing in the form of 10 exercises:
 
 * Data  integration
 * Custom submit actions
