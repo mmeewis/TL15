@@ -15,6 +15,68 @@ https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-sc
 
 Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) file from github and save it to your "Desktop".
 
+```json
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "profile": {
+            "type": "object",
+            "properties": {
+                "identity": {
+                    "$ref": "#/definitions/identity"
+                },
+                "address": {
+                    "$ref": "#/definitions/address"
+                }
+                
+            }
+        },
+        "identity": {
+            "type": "object",
+            "properties": {
+                "labmachinelabel": {
+                    "type": "string"
+                   ,"pattern" : "^(CS)[0-9]{3}-[0-9]{2}$"    
+                },
+                "firstname": {
+                    "type": "string"
+                },
+                "lastname": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                    ,"enum" : ["Male", "Female"]
+                },
+                "mobile": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "address": {
+            "type": "object",
+            "properties": {
+                "street": {
+                    "type": "string"
+                },
+                "postalcode": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "profile": {
+            "$ref": "#/definitions/profile"
+        }
+    }
+}
+```
+
 
 ## Step 2 - Create a form and assign the schema
 
