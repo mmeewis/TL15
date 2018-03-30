@@ -10,7 +10,7 @@ The data is saved in JSON format and sructured according to the associated JSON 
 
 ## The form submission process
 
-![aem-forms-submit.png](../resources/aem-forms-submit.png]
+![aem-forms-submit.png](../resources/aem-forms-submit.png)
 
 ## Fill the form and save a draft
 
