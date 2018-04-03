@@ -14,3 +14,6 @@ A Submit action is a sling:Folder that includes the following:
      * guideDataModel of type String that specifies the type of adaptive form for which the Submit action is applicable. xfa is supported for XFA-based adaptive forms while xsd is supported for XSD-based adaptive forms. basic is supported for adaptive forms that do not use XDP or XSD. To display the action on multiple types of adaptive forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based adaptive forms, specify the values xfa and xsd respectively.
      * jcr:description of type String. The value of this property is displayed in the Submit action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location /libs/fd/af/components/guidesubmittype.
 
+** Setup Custom submit action
+
+* Deploy the package
