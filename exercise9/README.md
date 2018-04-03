@@ -14,12 +14,12 @@ A Submit action is a sling:Folder that includes the following:
      * guideDataModel of type String that specifies the type of adaptive form for which the Submit action is applicable. xfa is supported for XFA-based adaptive forms while xsd is supported for XSD-based adaptive forms. basic is supported for adaptive forms that do not use XDP or XSD. To display the action on multiple types of adaptive forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based adaptive forms, specify the values xfa and xsd respectively.
      * jcr:description of type String. The value of this property is displayed in the Submit action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location /libs/fd/af/components/guidesubmittype.
 
-** Setup Custom submit action
+## Setup Custom submit action
 
 * Deploy the package [tl15-custom-submit-actions-1.0.zip](../resources/tl15-custom-submit-actions-1.0.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Install the package
 
-** Configure the submit action
+## Configure the submit action
 
 * Navigate to [/apps/summit-2018/tl15/components/guidesubmittype/acssubmit](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/components/guidesubmittype/acssubmit) in CRX DE
 * Open /apps/summit-2018/tl15/components/guidesubmittype/acssubmit/post.POST.jsp
@@ -42,6 +42,37 @@ A Submit action is a sling:Folder that includes the following:
     logger.log("ACS Submit Action done");
 
 %>
-
 ```
+
+### Obtain your ACS Connector Service
+
+We wil use a wrapper service around an Adobe IO library that will create/update or profile in Adobe Campaign
+
+``` java
+@Component(immediate = true)
+@Service(value = ACSConnector.class)
+@Properties({
+	 @Property(name = Constants.SERVICE_VENDOR, value = "Adobe Belux Presales"),
+	 @Property(name = Constants.SERVICE_DESCRIPTION, value = "Summit 2018 - TL15 - ACS Connector")
+	})
+public class ACSConnectorImpl implements ACSConnector {
+	
+	private static final Logger logger = LoggerFactory.getLogger(ACSConnector.class);
+	
+	@Reference
+	private AdobeIORequestProcessor adobeIORequestProcessor;
+
+	public String createProfile(String formdata) throws Exception {
+		
+		String profileResponse = adobeIORequestProcessor.createUpdateProfileByLabMachineLabel(formdata);
+		
+		logger.info("ACS profileResponse : " + profileResponse);
+		
+		return "profileResponse";
+		
+	}
+    
+    ...
+```
+
 
