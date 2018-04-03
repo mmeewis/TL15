@@ -77,7 +77,7 @@ String acsResponse = acsConnector.createProfile(submitInfo.getData());
 logger.log("acsResponse : " + acsResponse);
 ```
 
-The snippet below show the implementation of the ACSConnector's createProfile method:
+The snippet below show the implementation of the ACSConnector's createProfile method (**do not paste it in your post.POST.jsp**)
 
 ```java
 @Component(immediate = true)
