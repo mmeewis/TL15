@@ -69,39 +69,12 @@ logger.log("Form submit data : " + submitInfo.getData());
 
 ### Create the ACS profile from the form data
 
-The ACS Connector's createProfile method is a wrapper around an Adobe IO library which exposes REST methods as plain java calls.
+The [ACS Connector's](../resources/ACSConnectorImpl.java) createProfile method is a wrapper around an Adobe IO library which exposes REST methods as plain java calls.
 
 ```java
 // Create the profile in Adobe Campaign (Adobe IO)
 String acsResponse = acsConnector.createProfile(submitInfo.getData());
 logger.log("acsResponse : " + acsResponse);
-```
-
-The snippet below show the implementation of the ACSConnector's createProfile method (**do not paste it in your post.POST.jsp**)
-
-```java
-@Component(immediate = true)
-@Service(value = ACSConnector.class)
-@Properties({
-	 @Property(name = Constants.SERVICE_VENDOR, value = "Adobe Belux Presales"),
-	 @Property(name = Constants.SERVICE_DESCRIPTION, value = "Summit 2018 - TL15 - ACS Connector")
-	})
-public class ACSConnectorImpl implements ACSConnector {
-	
-	private static final Logger logger = LoggerFactory.getLogger(ACSConnector.class);
-	
-	@Reference
-	private AdobeIORequestProcessor adobeIORequestProcessor;
-
-	public String createProfile(String formdata) throws Exception {
-		
-		String profileResponse = adobeIORequestProcessor.createUpdateProfileByLabMachineLabel(formdata);
-		
-		logger.info("ACS profileResponse : " + profileResponse);
-		
-		return "profileResponse";
-		
-	}
 ```
 
 ### Retrieve the redirect parameters
