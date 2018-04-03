@@ -152,5 +152,72 @@ To check if your profile has been created in Adobe Campaign, you can execute the
 The response should look like:
 
 ``` json
-{"content":[{"PKey":"@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSokZS26Vu-WybUFMqmH3tZQPMPzyGISzUvGYivpW7VxjFEFUmQo","age":0,"birthDate":"","blackList":false,"blackListEmail":false,"blackListFax":false,"blackListMobile":false,"blackListPhone":false,"blackListPostalMail":false,"blackListPushnotification":false,"created":"2018-02-21 09:26:57.584Z","cryptedId":"GfEg9uI5pvlz0upprPaTc+bXYSNQc0GElI59HAqH6Zi+gjDLWGzuu4gSPFiHx3ycTo1h9A==","cusCrmid":"","cusLabmachinelabel":"CS542-23","cusLeadid":"","domain":"adobe.com","email":"mmeewis@adobe.com","emailFormat":"unknown","fax":"","firstName":"Marc","gender":"male","href":"https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile/@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSokZS26Vu-WybUFMqmH3tZQPMPzyGISzUvGYivpW7VxjFEFUmQo","isExternal":false,"lastModified":"2018-04-03 14:24:29.562Z","lastName":"Meewis","location":{"address1":"","address2":"","address3":"","address4":"","city":"","countryCode":"","stateCode":"","zipCode":""},"middleName":"","mobilePhone":"","phone":"","postalAddress":{"addrDefined":false,"addrErrorCount":0,"addrLastCheck":"","addrQuality":"0","line1":"Marc MEEWIS","line2":"","line3":"","line4":"","line5":"","line6":"","serialized":"Marc MEEWIS\n\n\n\n\n"},"preferredLanguage":"none","salutation":"","subscriptions":{"href":"https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile/@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSolV2z9hLSDZIIAurg4bJCwwotExHmV7QewYEpgSnXlRZCE05Zw/subscriptions/"},"thumbnail":"/nl/img/thumbnails/defaultProfil.png","timeZone":"none","title":"Marc Meewis (mmeewis@adobe.com)"}],"count":{"href":"https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile//byLabmachinelabel/_count?labmachinelabel_parameter=CS542-23&_lineStart=@V6qffHpTFynfhZ__bzIDMDHx2x0-exnBzat6TFhASdMTSpTe","value":1},"serverSidePagination":true}
+{
+	"content": [{
+		"PKey": "@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSokZS26Vu-WybUFMqmH3tZQPMPzyGISzUvGYivpW7VxjFEFUmQo",
+		"age": 0,
+		"birthDate": "",
+		"blackList": false,
+		"blackListEmail": false,
+		"blackListFax": false,
+		"blackListMobile": false,
+		"blackListPhone": false,
+		"blackListPostalMail": false,
+		"blackListPushnotification": false,
+		"created": "2018-02-21 09:26:57.584Z",
+		"cryptedId": "GfEg9uI5pvlz0upprPaTc+bXYSNQc0GElI59HAqH6Zi+gjDLWGzuu4gSPFiHx3ycTo1h9A==",
+		"cusCrmid": "",
+		"cusLabmachinelabel": "CS542-23",
+		"cusLeadid": "",
+		"domain": "adobe.com",
+		"email": "mmeewis@adobe.com",
+		"emailFormat": "unknown",
+		"fax": "",
+		"firstName": "Marc",
+		"gender": "male",
+		"href": "https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile/@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSokZS26Vu-WybUFMqmH3tZQPMPzyGISzUvGYivpW7VxjFEFUmQo",
+		"isExternal": false,
+		"lastModified": "2018-04-03 14:24:29.562Z",
+		"lastName": "Meewis",
+		"location": {
+			"address1": "",
+			"address2": "",
+			"address3": "",
+			"address4": "",
+			"city": "",
+			"countryCode": "",
+			"stateCode": "",
+			"zipCode": ""
+		},
+		"middleName": "",
+		"mobilePhone": "",
+		"phone": "",
+		"postalAddress": {
+			"addrDefined": false,
+			"addrErrorCount": 0,
+			"addrLastCheck": "",
+			"addrQuality": "0",
+			"line1": "Marc MEEWIS",
+			"line2": "",
+			"line3": "",
+			"line4": "",
+			"line5": "",
+			"line6": "",
+			"serialized": "Marc MEEWIS\n\n\n\n\n"
+		},
+		"preferredLanguage": "none",
+		"salutation": "",
+		"subscriptions": {
+			"href": "https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile/@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSolV2z9hLSDZIIAurg4bJCwwotExHmV7QewYEpgSnXlRZCE05Zw/subscriptions/"
+		},
+		"thumbnail": "/nl/img/thumbnails/defaultProfil.png",
+		"timeZone": "none",
+		"title": "Marc Meewis (mmeewis@adobe.com)"
+	}],
+	"count": {
+		"href": "https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile//byLabmachinelabel/_count?labmachinelabel_parameter=CS542-23&_lineStart=@V6qffHpTFynfhZ__bzIDMDHx2x0-exnBzat6TFhASdMTSpTe",
+		"value": 1
+	},
+	"serverSidePagination": true
+}
 ```
