@@ -44,11 +44,41 @@ A Submit action is a sling:Folder that includes the following:
 %>
 ```
 
+Add the following code snippets to your post.POST.jsp.
+
 ### Obtain your ACS Connector Service
 
-We wil use a wrapper service around an Adobe IO library that will create/update or profile in Adobe Campaign
+We wil use a wrapper service (ACSConnector) around an Adobe IO library that will create/update or profile in Adobe Campaign. A
 
 ``` java
+// Obtain your ACS Connector Service
+ACSConnector acsConnector = sling.getService(ACSConnector.class);
+
+```
+
+### Get the form data that was submitted
+
+The FormSubmitInfo object can be retrieved from the request object. The getData() method returns the form data.
+
+```java
+// Get the form data
+FormSubmitInfo submitInfo = (FormSubmitInfo) request.getAttribute(GuideConstants.FORM_SUBMIT_INFO);
+logger.log("Form submit data : " + submitInfo.getData());
+```
+
+### Create the ACS profile from the form data
+
+The ACS Connector's createProfile method is a wrapper around an Adobe IO library which exposes REST methods as plain java calls.
+
+```java
+// Create the profile in Adobe Campaign (Adobe IO)
+String acsResponse = acsConnector.createProfile(submitInfo.getData());
+logger.log("acsResponse : " + acsResponse);
+```
+
+The snippet below show the implementation of the ACSConnector's createProfile method:
+
+```java
 @Component(immediate = true)
 @Service(value = ACSConnector.class)
 @Properties({
@@ -71,8 +101,22 @@ public class ACSConnectorImpl implements ACSConnector {
 		return "profileResponse";
 		
 	}
-    
-    ...
 ```
 
+### Retrieve the redirect parameters
 
+```java
+// Get the redirect parameters
+Map<String,String> redirectParameters;
+redirectParameters = GuideSubmitUtils.getRedirectParameters(slingRequest);
+if(redirectParameters==null) {
+	redirectParameters = new HashMap<String, String>();
+}
+```
+
+### Peform the required redirect
+
+```java
+// Perform the required redirect 
+GuideSubmitUtils.setRedirectParameters(slingRequest,redirectParameters);
+```
