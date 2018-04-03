@@ -16,4 +16,32 @@ A Submit action is a sling:Folder that includes the following:
 
 ** Setup Custom submit action
 
-* Deploy the package
+* Deploy the package [tl15-custom-submit-actions-1.0.zip](../resources/tl15-custom-submit-actions-1.0.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Install the package
+
+** Configure the submit action
+
+* Navigate to [/apps/summit-2018/tl15/components/guidesubmittype/acssubmit](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/components/guidesubmittype/acssubmit) in CRX DE
+* Open /apps/summit-2018/tl15/components/guidesubmittype/acssubmit/post.POST.jsp
+
+```java
+<%
+
+    logger.log("ACS Submit Action triggered");
+
+	// Obtain your ACS Connector Service
+
+	// Get the form data
+
+	// Create the profile in Adobe Campaign (Adobe IO)
+
+	// Get the redirect parameters
+
+	// Perform the required redirect 
+
+	logger.log("ACS Submit Action done");
+
+%>
+
+```
+
