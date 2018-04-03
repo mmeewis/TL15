@@ -22,6 +22,7 @@ A Submit action is a sling:Folder that includes the following:
 ## Configure the submit action
 
 * Navigate to [/apps/summit-2018/tl15/components/guidesubmittype/acssubmit](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/components/guidesubmittype/acssubmit) in CRX DE
+* Select "acssubmit", look at "jcr:description", this is the name that will appear in the "Submit Action" select list when configuring your form.
 * Open /apps/summit-2018/tl15/components/guidesubmittype/acssubmit/post.POST.jsp
 
 ```java
@@ -119,4 +120,37 @@ if(redirectParameters==null) {
 ```java
 // Perform the required redirect 
 GuideSubmitUtils.setRedirectParameters(slingRequest,redirectParameters);
+```
+
+## Configure your form to use the custom submit action
+
+* Open your form created during [exercise2](../exercise2/README.md)
+* In authoring mode, select any component, from the context menu select parent, from the list select "Adaptive Form container"
+* Scroll down and select "Configure" from the context menu
+* Select "Submission" in the configuration panel
+* Check "Store data in forms panel"
+* Select "Summit TL15 - Custom Submit Action" from the Submit Action list
+* Click "Done" (upper right in the configuration panel)
+
+This is how your configuration panel should look like:
+
+![tl15-configure-custom-submit-acs.png](../resources/tl15-configure-custom-submit-acs.png)
+
+## Test your form
+
+* Preview your form, fill all the "Identity" fields 
+* Make sure that your use your Lab Machine Label as the value for teh field "Cus Labmachinelabel"
+* Click Submit
+* Check your error.log
+
+## Check if your profile has been created
+
+To check if your profile has been created in Adobe Campaign, you can execute the following url
+
+[http://localhost:4502/services/api/acs/profileByLabmachinelabel?labmachinelabel=CS542-23](http://localhost:4502/services/api/acs/profileByLabmachinelabel?labmachinelabel=<YOUR LAB MACHINE LABEL>)
+
+The response should look like:
+
+``` json
+{"content":[{"PKey":"@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSokZS26Vu-WybUFMqmH3tZQPMPzyGISzUvGYivpW7VxjFEFUmQo","age":0,"birthDate":"","blackList":false,"blackListEmail":false,"blackListFax":false,"blackListMobile":false,"blackListPhone":false,"blackListPostalMail":false,"blackListPushnotification":false,"created":"2018-02-21 09:26:57.584Z","cryptedId":"GfEg9uI5pvlz0upprPaTc+bXYSNQc0GElI59HAqH6Zi+gjDLWGzuu4gSPFiHx3ycTo1h9A==","cusCrmid":"","cusLabmachinelabel":"CS542-23","cusLeadid":"","domain":"adobe.com","email":"mmeewis@adobe.com","emailFormat":"unknown","fax":"","firstName":"Marc","gender":"male","href":"https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile/@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSokZS26Vu-WybUFMqmH3tZQPMPzyGISzUvGYivpW7VxjFEFUmQo","isExternal":false,"lastModified":"2018-04-03 14:24:29.562Z","lastName":"Meewis","location":{"address1":"","address2":"","address3":"","address4":"","city":"","countryCode":"","stateCode":"","zipCode":""},"middleName":"","mobilePhone":"","phone":"","postalAddress":{"addrDefined":false,"addrErrorCount":0,"addrLastCheck":"","addrQuality":"0","line1":"Marc MEEWIS","line2":"","line3":"","line4":"","line5":"","line6":"","serialized":"Marc MEEWIS\n\n\n\n\n"},"preferredLanguage":"none","salutation":"","subscriptions":{"href":"https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile/@4W1bK-5q0Icicnaf4EHUhZWyb-oXBTw1cSen3YxvSolV2z9hLSDZIIAurg4bJCwwotExHmV7QewYEpgSnXlRZCE05Zw/subscriptions/"},"thumbnail":"/nl/img/thumbnails/defaultProfil.png","timeZone":"none","title":"Marc Meewis (mmeewis@adobe.com)"}],"count":{"href":"https://mc.adobe.io/marcmeewis-230217.campaign-demo.adobe.com/campaign/profileAndServicesExt/profile//byLabmachinelabel/_count?labmachinelabel_parameter=CS542-23&_lineStart=@V6qffHpTFynfhZ__bzIDMDHx2x0-exnBzat6TFhASdMTSpTe","value":1},"serverSidePagination":true}
 ```
