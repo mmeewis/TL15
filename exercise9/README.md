@@ -29,17 +29,17 @@ A Submit action is a sling:Folder that includes the following:
 
     logger.log("ACS Submit Action triggered");
 
-	// Obtain your ACS Connector Service
+    // Obtain your ACS Connector Service
 
-	// Get the form data
+    // Get the form data
 
-	// Create the profile in Adobe Campaign (Adobe IO)
+    // Create the profile in Adobe Campaign (Adobe IO)
 
-	// Get the redirect parameters
+    // Get the redirect parameters
 
-	// Perform the required redirect 
-
-	logger.log("ACS Submit Action done");
+    // Perform the required redirect 
+    
+    logger.log("ACS Submit Action done");
 
 %>
 
