@@ -5,4 +5,5 @@ For this lab we are using a locally installed AEM author instance [http://localh
 
 ## Setup
 
+Download the github content to your Desktop (https://github.com/mmeewis/TL15/archive/master.zip)[https://github.com/mmeewis/TL15/archive/master.zip]
 
