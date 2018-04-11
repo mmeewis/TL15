@@ -5,7 +5,7 @@ AEM Forms allows form developers to seamlessly embed adaptive forms in an AEM Si
 ## Add the AEM Form component to your "Form"-page
 
 * Open [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/form.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/form.html) in edit mode
-* Edit the form component (added as part of [exercise 1](../exercise1/README.md)
+* Edit the form component (added as part of [exercise 1](../exercise1/README.md))
 * Select your form created as part of [exercise 2](../exercise2/README.md)
 * Select "Forms covers entire width of the page"
 
