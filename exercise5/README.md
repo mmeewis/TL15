@@ -146,7 +146,7 @@ public class FileDraftDataServiceImpl implements DraftDataService {
     
 ## Open the form via the Forms Portal 
 
-* Navigate to your site's "Portal" page and locate your form under the "Drafts"-tab.
+* Navigate to your site's "Portal" page [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html) and locate your form under the "Drafts"-tab.
 * Open the form
 * Your form is prefilled with the draft data (including the change made in previous step), the draft data is loaded using the custom OSGi File based DraftDataService.  
 
