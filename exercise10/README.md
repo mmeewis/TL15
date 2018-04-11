@@ -65,3 +65,77 @@ The full code is shown below:
 
 %>
 ```
+
+Open [/apps/summit-2018/tl15/components/prefillbymachinelabel/prefillbymachinelabel.jsp](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/components/prefillbymachinelabel/prefillbymachinelabel.jsp) in CRX DE and past the code above.
+
+## Modify the page component
+
+We need to modify the "Lab TL15 Prefill Content Page"'s component to invoke the prefill component. As you can see the prefillpage components [/apps/lab-tl15/components/structure/prefillpage](http://localhost:4502/crx/de/index.jsp#/apps/lab-tl15/components/structure/prefillpage) extends [/apps/lab-tl15/components/structure/page](http://localhost:4502/crx/de/index.jsp#/apps/lab-tl15/components/structure/page) and just overrides the "headlibs.html"
+
+Open [/apps/lab-tl15/components/structure/prefillpage/partials/headlibs.html](http://localhost:4502/crx/de/index.jsp#/apps/lab-tl15/components/structure/prefillpage/partials/headlibs.html) in CRX DE and add the following line:
+
+```java
+<sly data-sly-include="/apps/summit-2018/tl15/components/prefillbymachinelabel/prefillbymachinelabel.jsp" />
+```
+
+So that the code looks like:
+
+```java
+<!--/*
+    Copyright 2016 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+<!--/* Include the site client libraries (loading only the CSS in the header, JS will be loaded in the footer) */-->
+<sly data-sly-use.wcmInit="wcm/foundation/components/page/initwcm.js" data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories=pageProperties['bw-theme'] || 'lab-tl15.site'}"/>
+    <sly data-sly-call="${clientLib.css @ categories=wcmInit.templateCategories}" />
+</sly>
+
+<!--/* Initialize the Authoring UI */-->
+<sly data-sly-include="author.html" />
+
+<!--/* Initialize Cloud Services */-->
+<sly data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp" />
+
+<sly data-sly-include="/apps/summit-2018/tl15/components/prefillbymachinelabel/prefillbymachinelabel.jsp" />
+
+<script src="https://use.typekit.net/xml3nlr.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+```
+
+## Enable form prefilling
+
+* Navigate to [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/summit-2018](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/summit-2018)
+* Open the form you created as part of [exercise 2](../exercise2/README.md) in edit mode
+* Open the configuration panel for "Adaptive Form container"
+* Select "Form Data Model Prefill service" from the "Prefill Service" dropdown
+* Save your changes
+
+## Add the form to your prefill page
+
+* Open [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html) in edit mode
+* Edit the form component (added as part of [exercise 1](../exercise1/README.md)
+* Select your form edited in the previous step and that has been created as part of [exercise 2](../exercise2/README.md)
+* Select "Forms covers entire width of the page"
+
+## Test the prefill
+
+* Open [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html) in preview mode
+* Add ?lml=CSXXX-XX to you page URL, replace CSXXX-XX with your "Lab Machine Label" or the label that you used to identify your profile in Adobe Campaign
+
+You should see the form prefilled with data, you can change and submit your data again.
+
+
+
