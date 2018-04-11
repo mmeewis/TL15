@@ -19,7 +19,12 @@ As part of this exercise we will
 
 ## The prefill component
 
-The prefill component identifies the "Lab Machine Label" from page url parameter "lml" and uses it to fetch the campaign profile:
+The prefill component identifies the "Lab Machine Label" from page url parameter "lml" and uses it to fetch the campaign profile using the ACSConnector service 
+
+```java
+String prefillResponse = acsConnector.getProfileByLabMachineLabel(labmachinelabel, ACSConnector.OUTPUT_FORMS);
+```
+The full code is shown below:
 
 ```java
 <%--
