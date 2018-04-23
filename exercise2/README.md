@@ -36,7 +36,7 @@ Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) - ri
             "properties": {
                 "labmachinelabel": {
                     "type": "string"
-                   ,"pattern" : "^(CS)[0-9]{3}-[0-9]{2}$"    
+                   ,"pattern" : "^(CS)[0-9]{2}-[0-9]{3}$"    
                 },
                 "firstname": {
                     "type": "string"
