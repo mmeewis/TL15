@@ -77,9 +77,10 @@ Open [/apps/summit-2018/tl15/components/prefillbymachinelabel/prefillbymachinela
 
 We need to modify the "Lab TL15 Prefill Content Page"'s component to invoke the prefill component. As you can see the prefillpage components [/apps/lab-tl15/components/structure/prefillpage](http://localhost:4502/crx/de/index.jsp#/apps/lab-tl15/components/structure/prefillpage) extends [/apps/lab-tl15/components/structure/page](http://localhost:4502/crx/de/index.jsp#/apps/lab-tl15/components/structure/page) and just overrides the "headlibs.html"
 
-Open [/apps/lab-tl15/components/structure/prefillpage/partials/headlibs.html](http://localhost:4502/crx/de/index.jsp#/apps/lab-tl15/components/structure/prefillpage/partials/headlibs.html) in CRX DE and add the following line:
+Open [/apps/lab-tl15/components/structure/prefillpage/partials/headlibs.html](http://localhost:4502/crx/de/index.jsp#/apps/lab-tl15/components/structure/prefillpage/partials/headlibs.html) in CRX DE and add the following line just below "<!-- Add Prefill Call Here -->"
 
 ```java
+<!-- Add Prefill Call Here -->
 <sly data-sly-include="/apps/summit-2018/tl15/components/prefillbymachinelabel/prefillbymachinelabel.jsp" />
 ```
 
@@ -114,6 +115,7 @@ So that the code looks like:
 <!--/* Initialize Cloud Services */-->
 <sly data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp" />
 
+<!-- Add Prefill Call Here -->
 <sly data-sly-include="/apps/summit-2018/tl15/components/prefillbymachinelabel/prefillbymachinelabel.jsp" />
 
 <script src="https://use.typekit.net/xml3nlr.js"></script>
