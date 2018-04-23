@@ -112,7 +112,7 @@ This is how your configuration panel should look like:
 ## Test your form
 
 * Preview your form, fill all the "Identity" fields 
-* Make sure that your use your Lab Machine Label as the value for teh field "Cus Labmachinelabel"
+* Make sure that your use your Lab Machine Label CSXX-XXX as the value for the field "Cus Labmachinelabel"
 * Click Submit
 * Check your error.log
 
