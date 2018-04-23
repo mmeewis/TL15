@@ -16,6 +16,11 @@ As part of this exercise we will
 * create a component that will fetch the Adobe Campaign profile data based upon the "lab machine label"
 * embed the component in our "Lab TL15 Prefill Content Page"
 
+## Setup the prefill component
+
+* Deploy the package [packages/tl15-prefill-component-1.0.zip](../packages/tl15-packages/tl15-prefill-component-1.0.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Install the package
+
 
 ## The prefill component
 
