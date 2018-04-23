@@ -16,35 +16,25 @@
         "identity": {
             "type": "object",
             "properties": {
-                "labmachinelabel": {
+                "cusLabmachinelabel": {
                     "type": "string"
-                   ,"pattern" : "^(CS)[0-9]{3}-[0-9]{2}$"    
+                   ,"pattern" : "^(CS)[0-9]{2}-[0-9]{3}$"    
                 },
-                "firstname": {
+                "firstName": {
                     "type": "string"
                 },
-                "lastname": {
+                "lastName": {
                     "type": "string"
                 },
                 "gender": {
                     "type": "string"
                     ,"enum" : ["Male", "Female"]
                 },
-                "mobile": {
+                "mobilePhone": {
                     "type": "string"
                 },
                 "email": {
                     "type": "string"
-                },
-                "userName": {
-                    "type" : "string"
-                },
-                "language" : {
-                    "type" : "string"
-                   ,"enum" : ["English", "French", "German"]
-                },
-                "dateOfBirth" : {
-                    "type" : "string"
                 }
             }
         },
