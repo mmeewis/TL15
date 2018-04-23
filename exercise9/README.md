@@ -64,7 +64,7 @@ The FormSubmitInfo object can be retrieved from the request object. The getData(
 ```java
 // Get the form data
 FormSubmitInfo submitInfo = (FormSubmitInfo) request.getAttribute(GuideConstants.FORM_SUBMIT_INFO);
-logger.log("Form submit data : " + submitInfo.getData());
+logger.info("Form submit data : " + submitInfo.getData());
 ```
 
 ### Create the ACS profile from the form data
@@ -74,7 +74,7 @@ The [ACS Connector's](../resources/ACSConnectorImpl.java) createProfile method i
 ```java
 // Create the profile in Adobe Campaign (Adobe IO)
 String acsResponse = acsConnector.createProfile(submitInfo.getData());
-logger.log("acsResponse : " + acsResponse);
+logger.info("acsResponse : " + acsResponse);
 ```
 
 ### Retrieve the redirect parameters
