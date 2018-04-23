@@ -21,7 +21,7 @@ A Submit action is a sling:Folder that includes the following:
 
 ## Configure the submit action
 
-* Navigate to [/apps/summit-2018/tl15/components/guidesubmittype/acssubmit](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/components/guidesubmittype/acssubmit) in CRX DE
+* Navigate to [/apps/summit-2018/tl15/components/guidesubmittype/acssubmit/post.POST.jsp](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/components/guidesubmittype/acssubmit/post.POST.jsp) in CRX DE
 * Select "acssubmit", look at "jcr:description", this is the name that will appear in the "Submit Action" select list when configuring your form.
 * Open /apps/summit-2018/tl15/components/guidesubmittype/acssubmit/post.POST.jsp
 
