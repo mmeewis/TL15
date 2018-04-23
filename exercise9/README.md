@@ -16,7 +16,7 @@ A Submit action is a sling:Folder that includes the following:
 
 ## Setup Custom submit action
 
-* Deploy the package [tl15-custom-submit-actions-1.0.zip](../resources/tl15-custom-submit-actions-1.0.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Deploy the package [packages/tl15-custom-submit-actions-1.0.zip](../packages/tl15-custom-submit-actions-1.0.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Install the package
 
 ## Configure the submit action
