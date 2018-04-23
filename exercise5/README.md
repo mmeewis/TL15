@@ -128,7 +128,7 @@ public class FileDraftDataServiceImpl implements DraftDataService {
 
 ## Deploy the DraftDataService bundle
 
-* Our DraftDataService outlined above as already been deployed as part of the setup [exercise 1](../exercise1/README.md) 
+* Our DraftDataService outlined above has already been deployed as part of the setup [exercise 1](../exercise1/README.md) 
 
 ## Configure the "Forms Portal Draft and Submission Configuration"
 
