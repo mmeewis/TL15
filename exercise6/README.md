@@ -8,7 +8,7 @@ To improve the form filling experience we will allow the user to indicate if he/
 
 In exercises [exercise4](../exercise4/README.md) and [exercise5](../exercise5/README.md) we have discussed the default server-side behavior and implemented a custom server-side behavior for saving drafts. In this exercise we will have to change the client-side behavior because we want to show the user a dialog after clicking the save button. This dialog will ask the user if he/she wants to receive an email with a link to the draft form. This of cause, will only work when the user have provided an email in the email field.
 
-* Import [draft-email-handler-clientlib](../resources/draft-email-handler-clientlib.zip) via [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Import [packages/draft-email-handler-clientlib-1.0.zip](../packages/draft-email-handler-clientlib-1.0.zip) via [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Explore [/apps/summit-2018/tl15/draft-email-handler-clientlib/js/draftEmailHandler.js](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/draft-email-handler-clientlib/js/draftEmailHandler.js)
 
 ```javascript
@@ -114,7 +114,7 @@ $("#draftModal").modal('show');
 
 ## Step 4 : Deliver the email
 
-* The [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java) is already deployed as part of the bundle [summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar](resources/summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar) deployed as part of [exercise5](../exercise5/README.md).
+* The [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java) is already deployed as part of the bundle [summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar](resources/summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar) deployed as part of setup [exercise 1](../exercise1/README.md).
 
 This servlet will receive the "draftId" from the ajax call in the dialog. The darftId allows us to retrieve the form metadata using the configured DraftMetadataService.getProperty() method. Because we want to send an email we need the actual form data that is saved onto our filesystem using our custom implementation of the DraftDataService [exercise5](../exercise5/README.md). The form data stores the email address. The "userdataID" stored as part of the draft form's metadata will allow to identify the form data using the DraftDataService.getData() method.
 
