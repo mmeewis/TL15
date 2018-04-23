@@ -142,7 +142,7 @@ So that the code looks like:
 ## Test the prefill
 
 * Open [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html) in preview mode
-* Add ?lml=CSXXX-XX to you page URL, replace CSXXX-XX with your "Lab Machine Label" or the label that you used to identify your profile in Adobe Campaign
+* Add ?lml=CSXX-XXX to you page URL, replace CSXX-XXX with your "Lab Machine Label" or the label that you used to identify your profile in Adobe Campaign
 
 You should see the form prefilled with data, you can change and submit your data again.
 
