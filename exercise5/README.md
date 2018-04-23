@@ -128,7 +128,7 @@ public class FileDraftDataServiceImpl implements DraftDataService {
 
 ## Deploy the DraftDataService bundle
 
-* Download the [summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar](resources/summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar) bundle (right click/save link as) from github and deploy it via http://localhost:4502/system/console, make sure the bundle is started.
+* Our DraftDataService outlined above as already been deployed as part of the setup [exercise 1](../exercise1/README.md) 
 
 ## Configure the "Forms Portal Draft and Submission Configuration"
 
