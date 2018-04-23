@@ -120,7 +120,7 @@ This is how your configuration panel should look like:
 
 To check if your profile has been created in Adobe Campaign, you can execute the following url
 
-[http://localhost:4502/services/api/acs/profileByLabmachinelabel?labmachinelabel=CS542-23](http://localhost:4502/services/api/acs/profileByLabmachinelabel?labmachinelabel=<YOUR LAB MACHINE LABEL>)
+[http://localhost:4502/services/api/acs/profileByLabmachinelabel?labmachinelabel=CS12-123](http://localhost:4502/services/api/acs/profileByLabmachinelabel?labmachinelabel=<YOUR LAB MACHINE LABEL>)
 
 The response should look like:
 
