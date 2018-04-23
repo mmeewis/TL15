@@ -10,7 +10,7 @@ The data is saved in JSON format and sructured according to the associated JSON 
 
 ## Fill the form and save a draft
 
-Navigate to the AEM Site's "Form"-page [Exercise 2](../exercise2/README.md) and fill some fields and "Save" the form (do not submit the form)
+Navigate to the AEM Site's "Form"-page created in [Exercise 2](../exercise2/README.md) and fill some fields and "Save" the form (do not submit the form)
 
 ## Explore the form data
 
