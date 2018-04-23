@@ -59,15 +59,17 @@ The full code is shown below:
 
     System.out.println("fecthing prefill data for labmachinelabel : " + labmachinelabel);
 
-    ACSConnector acsConnector = sling.getService(ACSConnector.class);
+	if (labmachinelabel != null) {
 
-    String prefillResponse = acsConnector.getProfileByLabMachineLabel(labmachinelabel, ACSConnector.OUTPUT_FORMS);
+    	ACSConnector acsConnector = sling.getService(ACSConnector.class);
 
-    System.out.println("prefillResponse afData : " + prefillResponse);
+    	String prefillResponse = acsConnector.getProfileByLabMachineLabel(labmachinelabel, ACSConnector.OUTPUT_FORMS);
 
-    slingRequest.setAttribute("data", prefillResponse);
+    	System.out.println("prefillResponse afData : " + prefillResponse);
 
+    	slingRequest.setAttribute("data", prefillResponse);
 
+    }
 %>
 ```
 
