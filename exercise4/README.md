@@ -29,4 +29,4 @@ View the jcr:data node of a entry in the data folder (click the view link)
 The submitted data is saved in the crx repository. To access the data, navigate to http://localhost:4502/crx/de/index.jsp#/content/forms/fp/admin/submit
 View the jcr:data node of a entry in the data folder (click the view link)
 
-Similar to the custom DraftDataService, you could also create a custom implementation for the [SubmitDataService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/fd/fp/service/SubmitDataService.html).
+
