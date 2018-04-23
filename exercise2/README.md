@@ -13,7 +13,8 @@ https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-sc
 
 ## Step 1 - Download your JSON Schema
 
-Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) - right click to save it to your desktop.
+Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) - right click to save it to your desktop. Or find it in the TL15-Master/resources folder on your Desktop.
+
 ```javascript
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
