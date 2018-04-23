@@ -37,7 +37,7 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 ### Create a client library
 
-* Add the file /apps/summit-2018/tl15/draft-email-handler-clientlib/js/customAutoSaveTriggerEmail.js
+* locate [/apps/summit-2018/tl15/draft-email-handler-clientlib/js/customAutoSaveTriggerEmail.js](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/draft-email-handler-clientlib/js/customAutoSaveTriggerEmail.js)
 * Paste the code listed below
 
 ```javascript
