@@ -116,7 +116,7 @@ $("#draftModal").modal('show');
 
 * The [TL15UtilityServlet.java](../resources/TL15UtilityServlet.java) is already deployed as part of the bundle [summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar](resources/summit.lab.tl15-bundle-0.0.1-SNAPSHOT.jar) deployed as part of setup [exercise 1](../exercise1/README.md).
 
-This servlet will receive the "draftId" from the ajax call in the dialog. The darftId allows us to retrieve the form metadata using the configured DraftMetadataService.getProperty() method. Because we want to send an email we need the actual form data that is saved onto our filesystem using our custom implementation of the DraftDataService [exercise5](../exercise5/README.md). The form data stores the email address. The "userdataID" stored as part of the draft form's metadata will allow to identify the form data using the DraftDataService.getData() method.
+This servlet will receive the "draftId" from the ajax call in the dialog. The draftId allows us to retrieve the form metadata using the configured DraftMetadataService.getProperty() method. Because we want to send an email we need the actual form data that is saved onto our filesystem using our custom implementation of the DraftDataService [exercise5](../exercise5/README.md). The form data stores the email address. The "userdataID" stored as part of the draft form's metadata will allow to identify the form data using the DraftDataService.getData() method.
 
 The getTransactionalMessagePayload will prepare the payload for the adobe.io call to Adobe Campaign. AdobeIORequestProcessor is a library that provide a java api on top of Adobe Campaign's REST api.
 
