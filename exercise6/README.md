@@ -81,7 +81,7 @@ $(function() {
 
 * Open your [form](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) in edit mode
 * Toggle the side panel if needed
-* Select the "Form Cantainer" from the "Form Object" in the side pabel
+* Select the "Adaptive Form Cantainer" from the "Form Object" in the side pabel
 * Click "Configure"
 * Specify "draft-email-handler-clientlib" as the value for "Client Library Category"
 * Click "Done" (upper right in the side panel, color is blue in case of non-saved changes)
