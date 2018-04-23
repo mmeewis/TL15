@@ -131,7 +131,7 @@ So that the code looks like:
 ## Add the form to your prefill page
 
 * Open [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/prefill.html) in edit mode
-* Edit the form component (added as part of [exercise 1](../exercise1/README.md)
+* Edit the form component (added as part of [exercise 1](../exercise1/README.md))
 * Select your form edited in the previous step and that has been created as part of [exercise 2](../exercise2/README.md)
 * Select "Forms covers entire width of the page"
 
