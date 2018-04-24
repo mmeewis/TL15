@@ -102,7 +102,7 @@ See [How to activate the configuration panel for a form component](../generic/RE
 * Toggle the side panel
 * Select "Root Panel" from the available Form Objects
 * Click "Configure"
-* Select "Tabs on Top" panel layout
+* Select "Tabs on Top" for panel layout property
 * Confirm
 
 ### Add the "Identity" panel
