@@ -107,12 +107,12 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 ### Add the "Identity" panel
 * Select the "Root panel" component on the right and click "..."
-* Add Child panel "Identity"
+* Add Child panel "Identity" (title and name)
 
 ### Add the "Address" panel
 
 * Select the "Root panel" component on the right and click "..."
-* Add Child panel "Address"
+* Add Child panel "Address" (title and name)
 
 ### Add the toolbar
 
