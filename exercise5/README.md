@@ -132,6 +132,8 @@ public class FileDraftDataServiceImpl implements DraftDataService {
 
 ## Configure the "Forms Portal Draft and Submission Configuration"
 
+We need to configure the Forms Portal to use our custom Draft Data Service:
+
 * Open http://localhost:4502/system/console/configMgr and search for "Forms Portal Draft and Submission Configuration"
 * The default value is : com.adobe.fd.fp.service.impl.DraftDataServiceImpl
 * Set "Forms Portal Draft Data Service" to summit.tl15formsportal.file.draft.dataservice. This corresponds with the value for "aem.formsportal.impl.prop" set in the OSGi service "FileDraftDataServiceImpl" and save the configuration. In this lab we will only focus on the "drafts". To handle your "submits", you have to do implement a SubmitDataService.
