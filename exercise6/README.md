@@ -1,4 +1,4 @@
-# Send user a link to the saved form
+# Send user a link to the saved form (10')
 
 To improve the form filling experience we will allow the user to indicate if he/she wants to receive an email with a link to the draft form, after receiving the email, the user can continue filling the form on desktop or mobile. We will send the email using Adobe Campaign. To provide this functionality, we have to override the default client side behavior of the "save" button and we have to provide a service (servlet) to send the email.
 
