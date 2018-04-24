@@ -29,4 +29,4 @@ View the jcr:data node of a entry in the data folder (click the view link)
 ## Submit the form
 
 The submitted data is saved in the crx repository. To access the data, navigate to http://localhost:4502/crx/de/index.jsp#/content/forms/fp/admin/submit
-View the jcr:data node of a entry in the data folder (click the view link)
+View the jcr:data node of a entry in the "data" folder (click the view link)
