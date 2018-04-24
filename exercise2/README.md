@@ -11,9 +11,9 @@ An JSON Schema consists of simple and complex element types. The elements have a
 
 https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html
 
-## Step 1 - Download your JSON Schema
+## Step 1 - Explore JSON Schema
 
-Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) - right click to save it to your desktop. Or find it in the TL15-Master/resources folder on your Desktop.
+Expolore the the JSON schema that we will use to define the data model of our form.
 
 ```javascript
 {
@@ -89,7 +89,7 @@ Download the [summit-tl15.schema.json](../resource/summit-tl15.schema.json) - ri
 * Select From : Schema
 * Upload from disk 
 * Click "Upload Schema Definition"
-* Select "summit-tl15.schema.json" downloaded in "Step 1"
+* Select "summit-tl15.schema.json" in the TL15-Master/resources folder on your Desktop
 * You should see "Valid Schema Selected"
 * Create and Open form
 
