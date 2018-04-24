@@ -1,4 +1,4 @@
-# AEM Forms portal default draft/submit behavior
+# AEM Forms portal default draft/submit behavior (10')
 
 By default, a form uses the "Forms Portal Submit Action" to handle the saved or submitted data, we will later on in the lab see how you can change the submit behavior of a form with a custom submit action.
 
