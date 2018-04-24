@@ -17,7 +17,7 @@ Ignore the Cus Lab Machine Name for the moment, if you enter a value it should h
 ## Explore the form data
 
 The draft data is saved in the crx repository. To access the data, navigate to http://localhost:4502/crx/de/index.jsp#/content/forms/fp/admin/drafts
-View the jcr:data node of a entry in the data folder (click the view link)
+View the jcr:data node of a entry in the data folder (click the view link). A file will be downloaded into your Downloads folder. Right click the file to open with an editor.
 
 ## Access the form from the forms portal
 
@@ -29,4 +29,4 @@ View the jcr:data node of a entry in the data folder (click the view link)
 ## Submit the form
 
 The submitted data is saved in the crx repository. To access the data, navigate to http://localhost:4502/crx/de/index.jsp#/content/forms/fp/admin/submit
-View the jcr:data node of a entry in the "data" folder (click the view link)
+View the jcr:data node of a entry in the "data" folder (click the view link). A file will be downloaded into your Downloads folder. Right click the file to open with an editor.
