@@ -1,4 +1,4 @@
-# Excerice 2 - Create a (JSON Schema based) Form 
+# Excerice 2 - Create a (JSON Schema based) Form (10')
 
 AEM Forms supports creation of an adaptive form by using an existing JSON Schema as the form model. This JSON Schema represents the structure in which data is produced or consumed by the back-end system in your organization. The JSON Schema you use should be compliant with v4 specifications.  
 
