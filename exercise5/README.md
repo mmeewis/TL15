@@ -1,4 +1,4 @@
-# AEM Forms portal custom draft/submit behavior
+# AEM Forms portal custom draft/submit behavior (10')
 
 As mentioned in [exercise 4](../exercise4/README.md), the default forms portal draft/submit is to store data in the CRX repository. However, as users interact with forms through AEM publish instance, which is generally outside the enterprise firewall, organizations may want to customize data storage for it to be more secure and reliable.
 
