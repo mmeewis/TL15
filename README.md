@@ -14,27 +14,27 @@ Outline on the lab
 
 Javadoc : https://helpx.adobe.com/aem-forms/6/javadocs/index.html
 
-## [1. Setup your Environment](exercise1/README.md)
+## [1. Setup your Environment](exercise1/README.md) (10')
 
 Before we start, we will deploy our website and add a couple of pages required for this lab.
 
-## [2. Create a (JSON Schema based) Form](exercise2/README.md)
+## [2. Create a (JSON Schema based) Form](exercise2/README.md) (10')
 
 Create a form that we will use throughout the lab. A JSON Schema will be used as the form data model.
 
-## [3. Embed adaptive form in AEM sites page](exercise3/README.md)
+## [3. Embed adaptive form in AEM sites page](exercise3/README.md) (5')
 
 Make the form experience an integral part of your site.
 
-## [4. AEM Forms portal default draft/submit behavior](exercise4/README.md)
+## [4. AEM Forms portal default draft/submit behavior](exercise4/README.md) (5')
 
 Save (draft) data using the default "Forms Portal Submit Action".
 
-## [5. AEM Forms portal custom draft/submit behavior](exercise5/README.md)
+## [5. AEM Forms portal custom draft/submit behavior](exercise5/README.md) (10')
 
 Save (draft) data using a custom "Forms Portal Submit Action".
 
-## [6. Send user a link to the saved form](exercise6/README.md)
+## [6. Send user a link to the saved form](exercise6/README.md) (10')
 
 When the user clicks the "Save" button, we will show a dialog asking if a link to the form should be sent via email (Adobe Campaign)
 
