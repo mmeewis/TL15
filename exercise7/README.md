@@ -35,10 +35,12 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 ## Part 2 : Autosave when a specific field is changed (e.g. email)
 
+In the previous exercise, we auto saved the form after each field value change, in this part of the exercise we would on like to trigger the autosave only when a specific field (for example email) is changed.
+
 ### Create a client library
 
 * locate [/apps/summit-2018/tl15/draft-email-handler-clientlib/js/customAutoSaveTriggerEmail.js](http://localhost:4502/crx/de/index.jsp#/apps/summit-2018/tl15/draft-email-handler-clientlib/js/customAutoSaveTriggerEmail.js)
-* Paste the code listed below
+* Make sure it contains the code listed below
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function (){   
@@ -55,8 +57,6 @@ window.addEventListener("bridgeInitializeStart", function (){
 * This file is part of the same client library "draft-email-handler-clientlib" created in [exercise6](../exercise6/README.md) and will be loaded when the form loads.
 
 ### Configure the form
-
-In the previous exercise, we auto saved the form after each field value change, in this part of the exercise we would on like to trigger the autosave only when a specific field (for example email) is changed.
 
 * Open the form you created as part of [exercise2](../exercise2/README.md) in edit mode
 * Select "Adaptive Form Container" and select "Configure) (5)
