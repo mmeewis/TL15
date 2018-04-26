@@ -1,4 +1,4 @@
-# 7. Autosave Forms
+# 7. Autosave Forms (10')
 
 You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval. By default, contents of an adaptive form are saved on a user action, such as on pressing the save button. The auto save option is helpful in:
 
