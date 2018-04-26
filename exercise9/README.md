@@ -1,4 +1,4 @@
-# 9. Custom Submit Actions
+# 9. Custom Submit Actions (10')
 
 In this exercise we will create a submit action that registers our profile with Adobe Campaign. The submit action will trigger an Adobe IO call to create a profile in Adobe Campaign.
 
