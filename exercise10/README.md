@@ -1,4 +1,4 @@
-# 10. Prefill AEM Forms 
+# 10. Prefill AEM Forms (10')
 
 You can prefill the fields of an Adaptive form using existing data. When a user opens a form, the values for those fields are prefilled. You can achieve this with adaptive forms with or without a form template, or using XML or JSON schema as the form model. To accomplish this, the user data should be available as a prefill XML / JSON in a specific format that adheres to adaptive forms.
 
@@ -129,7 +129,7 @@ So that the code looks like:
 * Navigate to [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/summit-2018](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/summit-2018)
 * Open the form you created as part of [exercise 2](../exercise2/README.md) in edit mode
 * Open the configuration panel for "Adaptive Form container"
-* Select "Form Data Model Prefill service" from the "Prefill Service" dropdown
+* Select "Form Data Model Prefill service" from the "Prefill Service" dropdown, located under the "Basic" menu.
 * Save your changes
 
 ## Add the form to your prefill page
