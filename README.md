@@ -55,3 +55,5 @@ Create a custom submit action that sends an "Identity" to Adobe Campaign using A
 Create a custom submit action that sends an "Identity" to Adobe Campaign using Adobe.io.
 
 # The end
+
+Thank you for your participation, hope you enjoyed the lab.
