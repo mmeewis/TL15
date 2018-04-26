@@ -54,6 +54,6 @@ Create a custom submit action that sends your profile (identity) to Adobe Campai
 
 Prefill a form using your Adobe Campaign profile created in exercise 9.
 
-# The end
+# That's it!
 
-Thank you for your participation, hope you enjoyed the lab.
+Thank you for your participation, we hope you enjoyed the lab.
