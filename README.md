@@ -38,19 +38,19 @@ Save (draft) data using a custom "Forms Portal Submit Action".
 
 When the user clicks the "Save" button, we will show a dialog asking if a link to the form should be sent via email (Adobe Campaign)
 
-## [7. Autosave forms](exercise7/README.md)
+## [7. Autosave forms](exercise7/README.md) (10')
 
 Define events that should trigger auto save of forms.
 
-## [8. Submit actions](exercise8/README.md)
+## [8. Submit actions](exercise8/README.md) (5')
 
 Next to the default Forms portal submit action, find out about other out-of-the-box submit actions. 
 
-## [9. Custom submit action](exercise9/README.md)
+## [9. Custom submit action](exercise9/README.md) (10')
 
 Create a custom submit action that sends an "Identity" to Adobe Campaign using Adobe.io.
 
-## [10. Prefill AEM Forms](exercise10/README.md)
+## [10. Prefill AEM Forms](exercise10/README.md) (10')
 
 Create a custom submit action that sends an "Identity" to Adobe Campaign using Adobe.io.
 
