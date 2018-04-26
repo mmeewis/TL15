@@ -48,11 +48,11 @@ Next to the default Forms portal submit action, find out about other out-of-the-
 
 ## [9. Custom submit action](exercise9/README.md) (10')
 
-Create a custom submit action that sends an "Identity" to Adobe Campaign using Adobe.io.
+Create a custom submit action that sends your profile (identity) to Adobe Campaign using Adobe.io.
 
 ## [10. Prefill AEM Forms](exercise10/README.md) (10')
 
-Create a custom submit action that sends an "Identity" to Adobe Campaign using Adobe.io.
+Prefill a form using your Adobe Campaign profile created in exercise 9.
 
 # The end
 
