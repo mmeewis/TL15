@@ -99,15 +99,19 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 ### Add the toolbar
 
-* Select the "Root panel" component on the right and click "..."
-* Add Toolbar
-* Select the "Toolbar for Panel: : Root Panel" component
+* Toggle the side panel
+* Click the content icon in the side panel
+* Select the "Form Object" tab
+* Select "Root Panel"
+* Select the "..." three dots from the context menu that appears on the form
+* From the dropdown select "Add Toolbar"
+* Click the toolbar, a context menu appears
 * Use the "+" to add a next, previous, save and submit button
 
 ### Add data model fields to the "Identity" panel
 
 * Click the "Content" icon on the left
-* Select "Data Model Objects"
+* Select teh "Data Model Objects" tab
 * Drag the "Identity" parent from the model onto the form (this will copy all identity fields) right above the toolbar
 
 ### Add data model fields to the "Address" panel
