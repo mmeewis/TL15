@@ -97,7 +97,7 @@ GuideSubmitUtils.setRedirectParameters(slingRequest,redirectParameters);
 
 ## Configure your form to use the custom submit action
 
-* Open your form created during [exercise2](../exercise2/README.md)
+* Open your [form](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) created during [exercise2](../exercise2/README.md)
 * In authoring mode, select any component, from the context menu select parent, from the list select "Adaptive Form container"
 * Scroll down and select "Configure" from the context menu
 * Select "Submission" in the configuration panel
