@@ -33,7 +33,7 @@ In our lab we will access Adobe Campaign, let's check if you can execute an adob
 
 ## Add some pages to your site
 
-We will add three pages under [http://localhost:4502/sites.html/content/lab-tl15/language-masters](http://localhost:4502/sites.html/content/lab-tl15/language-masters)
+We will add three pages under [http://localhost:4502/sites.html/content/lab-tl15/language-masters/en](http://localhost:4502/sites.html/content/lab-tl15/language-masters/en)
 
 ### Forms portal page
 
