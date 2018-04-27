@@ -140,7 +140,7 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
 
 ## Fill and save the form
 
-* Access the form via the "Form" page defined in Exercise 3.
+* Access the form via the "Form" page defined in Exercise 3 [http://localhost:4502/content/lab-tl15/language-masters/en/form.html](http://localhost:4502/content/lab-tl15/language-masters/en/form.html)
 * Enter some data and save (no submit)
 * You should now find a file in your Mac's Desktop folder named <number>.json
 * Open the file and have a look a the data.
