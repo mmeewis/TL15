@@ -97,23 +97,6 @@ Expolore the the JSON schema that we will use to define the data model of our fo
 
 See [How to activate the configuration panel for a form component](../generic/README.md)
 
-### Define you form layout
-
-* Toggle the side panel
-* Select "Root Panel" from the available Form Objects
-* Click "Configure"
-* Select "Tabs on Top" for panel layout property
-* Confirm
-
-### Add the "Identity" panel
-* Select the "Root panel" component on the right and click "..."
-* Add Child panel "Identity" (title and name)
-
-### Add the "Address" panel
-
-* Select the "Root panel" component on the right and click "..."
-* Add Child panel "Address" (title and name)
-
 ### Add the toolbar
 
 * Select the "Root panel" component on the right and click "..."
@@ -123,16 +106,23 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 ### Add data model fields to the "Identity" panel
 
-* Select the top tab "Identity"
 * Click the "Content" icon on the left
 * Select "Data Model Objects"
-* Drag and drop all the "Identity" fields from the model onto the "Identity" component
+* Drag the "Identity" parent from the model onto the form (this will copy all identity fields) right above the toolbar
+
+### Add data model fields to the "Address" panel
+
+* Drag the "Address" parent from the model onto the form right above the toolbar
+
+### Define you form layout
+
+* Toggle the side panel
+* Select "Root Panel" from the available Form Objects
+* Click "Configure"
+* Select "Tabs on Top" for panel layout property
+* Confirm
 
 Your form should look like:
 
 ![form-exercise2.png](../resources/form-exercise2.png)
 
-### Add data model fields to the "Address" panel
-
-* Select the top tab "Address"
-* Drag and drop all the "Address" fields from the model onto the "Address" component
