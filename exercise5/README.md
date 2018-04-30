@@ -146,7 +146,7 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
 * Open the file and have a look a the data.
 * Change one of the fields (for example firstname)
 	
-'''json
+'''javascript
 {
     "afData": {
         "afUnboundData": {
