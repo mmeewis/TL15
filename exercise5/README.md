@@ -156,3 +156,9 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
 ## Custom SubmitDataService
 
 Similar to the custom DraftDataService, you could also create a custom implementation for the [SubmitDataService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/fd/fp/service/SubmitDataService.html).
+
+
+## Solution
+
+* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise5-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise5-1.0.zip](../solutions/tl15-solution-exercise5-1.0.zip)
+* Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
