@@ -239,7 +239,7 @@ public class TL15UtilityServlet extends SlingSafeMethodsServlet {
 
 ## Step 5 : Test
 
-* Preview your form
+* Preview your form [http://localhost:4502/editor.html/content/forms/af/summit2018/TL15.html](http://localhost:4502/editor.html/content/forms/af/summit2018/TL15.html)
 * Provide a couple of values
 * Specify a valid "email" address (preferably your own)
 * Save the form
