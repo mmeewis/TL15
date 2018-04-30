@@ -144,7 +144,6 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
 * Enter some data and save (no submit)
 * You should now find a file in your Mac's Desktop folder named <number>.json
 * Open the file and have a look a the data.
-* Change one of the fields (for example firstname)
 	
 ```json
 {
@@ -176,6 +175,7 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
     
 ## Open the form via the Forms Portal 
 
+* Change one of the fields in the above json file (for example firstname)
 * Navigate to your site's "Portal" page [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html) and locate your form under the "Drafts"-tab.
 * Open the form
 * Your form is prefilled with the draft data (including the change made in previous step), the draft data is loaded using the custom OSGi File based DraftDataService.  
