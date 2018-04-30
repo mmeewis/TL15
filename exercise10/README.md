@@ -146,5 +146,9 @@ So that the code looks like:
 
 You should see the form prefilled with data, you can change and submit your data again.
 
+## Solution
+
+* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise10-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise10-1.0.zip](../solutions/tl15-solution-exercise10-1.0.zip)
+* Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
 
 
