@@ -11,7 +11,7 @@ For this lab we are using a locally installed AEM author instance [http://localh
 
 ### Deploy packages
 
-Deploy the packages that define our site (not required for AEM forms, just for this lab)
+Deploy the packages used to define our site (not required for AEM forms, just for this lab). 
 
 * Navigate to [Package Manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Install branding wizard
@@ -60,6 +60,8 @@ We will prefill a form that is integrated in our site
 * Search for "form" in components and drag "AEM Form" component to your page
 
 ## Solution
+
+The solution does not include the packages that are part of the "Deploy packges" section. Before you can deploy the exercise solution package below, you need to deploy the listed packages first.
 
 * The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise1-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise1-1.0.zip](../solutions/tl15-solution-exercise1-1.0.zip)
 * Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
