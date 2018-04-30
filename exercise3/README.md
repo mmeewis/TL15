@@ -9,3 +9,7 @@ AEM Forms allows form developers to seamlessly embed adaptive forms in an AEM Si
 * Select your form created as part of [exercise 2](../exercise2/README.md)
 * Select "Forms covers entire width of the page"
 
+## Solution
+
+* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise3-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise3-1.0.zip](../solutions/tl15-solution-exercise3-1.0.zip)
+* Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
