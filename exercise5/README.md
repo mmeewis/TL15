@@ -145,6 +145,34 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
 * You should now find a file in your Mac's Desktop folder named <number>.json
 * Open the file and have a look a the data.
 * Change one of the fields (for example firstname)
+	
+'''json
+{
+    "afData": {
+        "afUnboundData": {
+            "data": {}
+        },
+        "afBoundData": {
+            "data": {
+                "profile": {
+                    "identity": {
+                        "cusLabmachinelabel": "CS78-898",
+                        "firstName": "Marc",
+                        "email": "mmeewis@adobe.com"
+                    }
+                }
+            }
+        },
+        "afSubmissionInfo": {
+            "lastFocusItem": "guide[0].guide1[0].guideRootPanel[0].identity[0]",
+            "computedMetaInfo": {},
+            "signers": {},
+            "afPath": "/content/dam/formsanddocuments/summit2018/TL15",
+            "afSubmissionTime": "20180430013851"
+        }
+    }
+}
+'''
     
 ## Open the form via the Forms Portal 
 
