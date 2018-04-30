@@ -1,6 +1,6 @@
 # Prepare your environment (10')
 
-For this lab we are using a locally installed AEM author instance [http://localhost:4502](http://localhost:4502) (admin/admin). Before we can actually start the lab we need to deploy a couple of packages.
+For this lab we are using a locally installed AEM 6.3 author instance [http://localhost:4502](http://localhost:4502) (admin/admin). Before we can actually start the lab we need to deploy a couple of packages.
 
 ## Deploy and check
 
