@@ -59,3 +59,6 @@ We will prefill a form that is integrated in our site
 * Open the page
 * Search for "form" in components and drag "AEM Form" component to your page
 
+## Solution
+
+Install [tl15-solution-exercise1-1.0.zip](../solutions/tl15-solution-exercise1-1.0.zip), or from your TL15-Master/solutions folde on your Desktop using [package manager](http://localhost:4502/crx/packmgr/index.jsp).
