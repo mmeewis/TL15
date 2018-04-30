@@ -146,7 +146,7 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
 * Open the file and have a look a the data.
 * Change one of the fields (for example firstname)
 	
-'''javascript
+```json
 {
     "afData": {
         "afUnboundData": {
@@ -172,8 +172,8 @@ We need to configure the Forms Portal to use our custom Draft Data Service:
         }
     }
 }
-'''
-    
+```
+    
 ## Open the form via the Forms Portal 
 
 * Navigate to your site's "Portal" page [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html) and locate your form under the "Drafts"-tab.
