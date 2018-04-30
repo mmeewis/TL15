@@ -61,4 +61,5 @@ We will prefill a form that is integrated in our site
 
 ## Solution
 
-Install [tl15-solution-exercise1-1.0.zip](../solutions/tl15-solution-exercise1-1.0.zip), or from your TL15-Master/solutions folde on your Desktop using [package manager](http://localhost:4502/crx/packmgr/index.jsp).
+* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise1-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise1-1.0.zip](../solutions/tl15-solution-exercise1-1.0.zip)
+* Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
