@@ -27,7 +27,7 @@ See [How to activate the configuration panel for a form component](../generic/RE
 
 ### Test
 
-* Preview the form
+* Preview the form [http://localhost:4502/editor.html/content/forms/af/summit2018/TL15.html](http://localhost:4502/editor.html/content/forms/af/summit2018/TL15.html)
 * Fill a field
 * Check the most recent .json file on your Desktop
 * Fill a field
@@ -75,7 +75,7 @@ window.addEventListener("bridgeInitializeStart", function (){
 
 ### Test
 
-* Preview the form
+* Preview the form [http://localhost:4502/editor.html/content/forms/af/summit2018/TL15.html](http://localhost:4502/editor.html/content/forms/af/summit2018/TL15.html)
 * Fill a field (not email)
 * Check the most recent .json file on your desktop
 * Fill another field (not email)
