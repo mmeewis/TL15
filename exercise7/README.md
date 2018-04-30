@@ -33,6 +33,13 @@ See [How to activate the configuration panel for a form component](../generic/RE
 * Fill a field
 * Check the .json file again and see how it is autosaved for each field
 
+### Solution for Part 1
+
+* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise7-autosave-for-all-fields-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise7-autosave-for-all-fields-1.0.zip](../solutions/tl15-solution-exercise7-autosave-for-all-fields-1.0.zip)
+* Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
+
+
+
 ## Part 2 : Autosave when a specific field is changed (e.g. email)
 
 In the previous exercise, we auto saved the form after each field value change, in this part of the exercise we would on like to trigger the autosave only when a specific field (for example email) is changed.
@@ -76,7 +83,11 @@ window.addEventListener("bridgeInitializeStart", function (){
 * Enter a value for the "email" field and leave the field
 * Check the .json file again, all the entered form fields should be present
 
-## Solution
+### Solution for Part 2
 
-* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise7-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise7-1.0.zip](../solutions/tl15-solution-exercise7-1.0.zip)
+### Solution for Part 1
+
+* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise7-autosave-for-email-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise7-autosave-for-email-1.0.zip](../solutions/tl15-solution-exercise7-autosave-for-email-1.0.zip)
 * Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
+
+
