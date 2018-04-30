@@ -253,3 +253,8 @@ The Adobe Campaign instance we use in this demo, sends all emails to a sandbox e
 * Indentify your email
 * Click the "Account Opening"-link
 * Your draft form should display the previously entered data.
+
+## Solution
+
+* The solution for this exercise is available under TL15-Master/solution/tl15-solution-exercise6-1.0.zip folder on you desktop or you can donwload (righ-click/save) [tl15-solution-exercise6-1.0.zip](../solutions/tl15-solution-exercise6-1.0.zip)
+* Install the package via [package manager](http://localhost:4502/crx/packmgr/index.jsp).
