@@ -84,7 +84,7 @@ Expolore the the JSON schema that we will use to define the data model of our fo
 * Open de Summit2018 folder
 * Create an Adaptive Form
 * Select the "Blank" template
-* Name the form "TL15"
+* Enter "TL15" as the "Name" of the form.
 * Select "Form model"
 * Select From : Schema
 * Upload from disk 
