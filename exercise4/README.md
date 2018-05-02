@@ -10,7 +10,7 @@ The data is saved in JSON format and sructured according to the associated JSON 
 
 ## Fill the form and save a draft
 
-Navigate to the AEM Site's "Form"-page created in [Exercise 2](../exercise2/README.md) and fill some fields and "Save" the form (do not submit the form). 
+Navigate to the AEM Site's "Form"-page [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/form.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/form.html) created in [Exercise 2](../exercise2/README.md), switch to preview and fill some fields and "Save" the form (do not submit the form). 
 
 Ignore the Cus Lab Machine Name for the moment, if you enter a value it should have the format CSXX-XXX.
 
@@ -21,7 +21,7 @@ View the jcr:data node of a entry in the data folder (click the view link). A fi
 
 ## Access the form from the forms portal
 
-* Navigate to your "Portal" page created in [exercise 1](../exercise1/README.md)
+* Navigate to your "Portal" page [http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html](http://localhost:4502/editor.html/content/lab-tl15/language-masters/en/portal.html)created in [exercise 1](../exercise1/README.md)
 * Select the "Draft Forms" tab
 * Your form will be listed here
 * Open the form, it will be prefilled with the saved data
