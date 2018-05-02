@@ -19,7 +19,7 @@ See [How to activate the configuration panel for a form component](../generic/RE
 * Select "Adaptive Form Container" and select "Configure) (5)
 * Scroll down in the configuration panel
 * Open and "enable" autosave
-* Set "Adaptive Form Event" equal 1
+* Set "Adaptive Form Event" equal 1 (You can specify 1 or TRUE to automatically start saving the form when the form is loaded in the browser)
 * Trigger is "Event Based"
 * Set the "Strategy Configuration"
   - Auto save after this event = elementValueChanged (see [GuideBridge Doc](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html) for a list of available GuideBridge events).
