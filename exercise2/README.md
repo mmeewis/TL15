@@ -102,7 +102,7 @@ See [How to activate the configuration panel for a form component](../generic/RE
 * Toggle the side panel
 * Click the content icon in the side panel
 * Select the "Form Object" tab
-* Select "Root Panel"
+* Select "Form Container"
 * Select the "..." three dots from the context menu that appears on the form
 * From the dropdown select "Add Toolbar"
 * Click the toolbar, a context menu appears
