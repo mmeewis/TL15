@@ -8,6 +8,8 @@ AEM Forms allows form developers to seamlessly embed adaptive forms in an AEM Si
 * Edit the form component (added as part of [exercise 1](../exercise1/README.md))
 * Select your form created as part of [exercise 2](../exercise2/README.md)
 * Select "Forms covers entire width of the page"
+* Close (confirm) dialog
+* Refresh page
 
 ## Solution
 
