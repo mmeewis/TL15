@@ -6,6 +6,7 @@ For this lab we are using a locally installed AEM 6.3 author instance [http://lo
 
 ### Download TL15-master.zip
 
+* No longer needed, the unzipped file is available in your Desktop as TL15-Master
 * Download the github content to your Desktop [https://github.com/mmeewis/TL15/archive/master.zip](https://github.com/mmeewis/TL15/archive/master.zip) (Right click, save link as, select Desktop)
 * Unzip TL15-master.zip
 
